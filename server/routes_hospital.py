@@ -75,3 +75,22 @@ def api_register_patient(hospital_id):
 def api_discharge_patient(patient_id):
     patient = storage.remove_patient(patient_id)
     return jsonify(patient or {})
+
+@hospital_bp.route("/hospital/<hospital_id>/claim", methods=["GET"])
+def claim_patient_page(hospital_id):
+    hospital = storage.get_hospital(hospital_id)
+    if not hospital:
+        return redirect(url_for("hospital.hospital_login"))
+    return render_template("claim_patient.html", hospital=hospital)
+
+
+@hospital_bp.route("/api/hospital/<hospital_id>/claim", methods=["POST"])
+def api_claim_patient(hospital_id):
+    data = request.json if request.is_json else request.form
+    band_id = (data.get("band_id") or "").strip().upper()
+    if not band_id:
+        return jsonify({"success": False, "error": "Enter a Band ID."}), 400
+    patient = storage.claim_patient_for_hospital(band_id, hospital_id)
+    if not patient:
+        return jsonify({"success": False, "error": "No patient found for that Band ID."}), 404
+    return jsonify({"success": True, "patient_id": patient["id"], "name": patient["name"]})

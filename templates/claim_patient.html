@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claim Patient — {{ hospital.name }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div style="max-width:420px;margin:60px auto;padding:20px;">
+    <h1>Claim a Patient</h1>
+    <p>Enter the Band ID of a self-registered patient to bring them under {{ hospital.name }}'s monitoring.</p>
+
+    <input type="text" id="bandId" placeholder="e.g. SB-BFIEFL" style="width:100%;padding:10px;margin-bottom:10px;">
+    <button id="claimBtn" style="width:100%;padding:12px;">Claim Patient</button>
+
+    <p id="result" style="margin-top:16px;"></p>
+
+    <p style="margin-top:30px;">
+      <a href="{{ url_for('hospital.hospital_dashboard', hospital_id=hospital.id) }}">&larr; Back to dashboard</a>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById("claimBtn").addEventListener("click", async () => {
+      const bandId = document.getElementById("bandId").value.trim();
+      const resultEl = document.getElementById("result");
+      if (!bandId) {
+        resultEl.textContent = "Please enter a Band ID.";
+        return;
+      }
+      try {
+        const res = await fetch("{{ url_for('hospital.api_claim_patient', hospital_id=hospital.id) }}", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ band_id: bandId })
+        });
+        const data = await res.json();
+        if (data.success) {
+          resultEl.textContent = `Claimed patient: ${data.name} (${data.patient_id})`;
+          resultEl.style.color = "green";
+        } else {
+          resultEl.textContent = data.error || "Could not claim patient.";
+          resultEl.style.color = "red";
+        }
+      } catch (e) {
+        resultEl.textContent = "Request failed: " + e.message;
+        resultEl.style.color = "red";
+      }
+    });
+  </script>
+</body>
+</html>

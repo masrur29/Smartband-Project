@@ -288,6 +288,26 @@ def remove_patient(patient_id):
         release_band(patient["band_id"])
     return patient
 
+def claim_patient_for_hospital(band_id, hospital_id):
+    """Reassign an existing patient (found via their Band ID) to a
+    different hospital — used when a hospital wants to take over
+    monitoring a self-registered patient instead of leaving them under
+    the generic SELF hospital."""
+    patient = get_patient_by_band(band_id)
+    if not patient:
+        return None
+    patient["hospital_id"] = hospital_id
+    if IS_CLOUD:
+        firebase_client.fs_save_doc("patient_records", patient["id"], patient)
+    else:
+        with _lock:
+            patients = load_patients()
+            for p in patients:
+                if p["id"] == patient["id"]:
+                    p["hospital_id"] = hospital_id
+            _save(PATIENTS_FILE, patients)
+    return patient
+
 
 def patients_for_hospital(hospital_id):
     return [p for p in load_patients() if p["hospital_id"] == hospital_id]
