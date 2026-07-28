@@ -1,0 +1,77 @@
+// static/alert-notify.js
+// Smartband V001 — shared alert notification helper
+// HSHL Project — Masrur
+//
+// Thresholds themselves are evaluated server-side in core/storage.py
+// (check_and_log_alert): FEVER (temp), SHOCK (accel), BRADYCARDIA/
+// TACHYCARDIA (bpm), BAND_NOT_WORN (worn flag). This file only handles
+// telling a human once server has logged one — banner + browser
+// notification + a short beep, and it only fires once per alert (tracked
+// by timestamp+patient_id so a page refresh doesn't re-notify for alerts
+// you've already seen in this tab).
+
+(function () {
+  const ALERT_LABELS = {
+    FEVER: "Fever",
+    SHOCK: "Sudden shock / fall-like spike",
+    BRADYCARDIA: "Low heart rate (bradycardia)",
+    TACHYCARDIA: "High heart rate (tachycardia)",
+    BAND_NOT_WORN: "Band not worn",
+  };
+
+  let seen = new Set();
+  let primed = false; // first poll just establishes the baseline, doesn't notify
+
+  if (window.Notification && Notification.permission === "default") {
+    Notification.requestPermission();
+  }
+
+  function beep() {
+    try {
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = "sine";
+      osc.frequency.value = 880;
+      gain.gain.setValueAtTime(0.15, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.35);
+      osc.connect(gain).connect(ctx.destination);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.35);
+    } catch (e) { /* audio not available — silently skip */ }
+  }
+
+  function showBanner(container, alert, patientName) {
+    const el = document.createElement("div");
+    el.className = "alert-banner";
+    const labels = alert.triggered_by.map(c => ALERT_LABELS[c] || c).join(", ");
+    el.innerHTML = `<strong>${patientName}</strong> — ${labels} <span class="alert-banner-time">${alert.timestamp.replace("T", " ")}</span>`;
+    container.prepend(el);
+    setTimeout(() => el.remove(), 15000);
+  }
+
+  function notifyBrowser(alert, patientName) {
+    if (!window.Notification || Notification.permission !== "granted") return;
+    const labels = alert.triggered_by.map(c => ALERT_LABELS[c] || c).join(", ");
+    new Notification("Smartband alert", { body: `${patientName}: ${labels}` });
+  }
+
+  /**
+   * Call this every poll with the freshly fetched alerts array and a
+   * function to resolve patient_id -> display name.
+   */
+  window.handleAlertPoll = function (alerts, resolveName, bannerContainerId) {
+    const container = document.getElementById(bannerContainerId);
+    const fresh = alerts.filter(a => !seen.has(a.timestamp + a.patient_id));
+    alerts.forEach(a => seen.add(a.timestamp + a.patient_id));
+
+    if (!primed) { primed = true; return; } // don't notify for pre-existing alerts on first load
+
+    fresh.forEach(a => {
+      const name = resolveName(a.patient_id) || a.patient_id;
+      if (container) showBanner(container, a, name);
+      notifyBrowser(a, name);
+      beep();
+    });
+  };
+})();

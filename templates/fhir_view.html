@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FHIR Lab — {{ hospital.name }}</title>
+<style>
+:root{
+  --bg:#000;--card:#111;--border:#1e1e1e;--surface:#0a0a0a;
+  --text:#f0f0f0;--muted:#555;--blue:#007aff;--green:#30d158;
+  --teal:#5ac8fa;--orange:#ff9500;--red:#ff3b30;--purple:#bf5af2;
+  --pink:#ff375f;--yellow:#ffd60a;--r:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);min-height:100vh;
+     font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',sans-serif;
+     max-width:1100px;margin:0 auto;padding:0 0 40px;}
+
+header{display:flex;align-items:center;justify-content:space-between;
+       padding:18px 20px 14px;border-bottom:.5px solid var(--border);}
+header h1{font-size:.85rem;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;}
+.back{color:var(--blue);font-size:.82rem;text-decoration:none;}
+
+.page{padding:14px 20px;}
+
+/* patient selector pills */
+.patient-pills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
+.ppill{padding:5px 14px;border-radius:20px;font-size:.75rem;cursor:pointer;
+       background:var(--card);border:.5px solid var(--border);color:var(--muted);
+       transition:all .2s;white-space:nowrap;}
+.ppill.active{background:rgba(0,122,255,.15);border-color:rgba(0,122,255,.4);
+              color:var(--blue);font-weight:500;}
+.ppill.all{background:rgba(91,172,250,.08);border-color:rgba(91,172,250,.3);color:var(--teal);}
+.ppill.all.active{background:rgba(91,172,250,.2);color:var(--teal);}
+
+/* tabs */
+.tabs{display:flex;gap:6px;margin-bottom:12px;}
+.tab{padding:6px 16px;border-radius:20px;font-size:.75rem;cursor:pointer;
+     background:var(--card);border:.5px solid var(--border);color:var(--muted);transition:all .2s;}
+.tab.active{background:rgba(0,122,255,.15);border-color:rgba(0,122,255,.4);color:var(--blue);}
+.tab-pane{display:none;}
+.tab-pane.active{display:block;}
+
+/* observation cards */
+.obs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px;}
+.obs-card{background:var(--surface);border:.5px solid var(--border);border-radius:10px;padding:14px;}
+.obs-patient{font-size:.58rem;color:var(--blue);letter-spacing:.08em;margin-bottom:3px;}
+.obs-loinc{font-size:.58rem;color:var(--muted);letter-spacing:.06em;margin-bottom:5px;}
+.obs-name{font-size:.82rem;font-weight:500;margin-bottom:6px;}
+.obs-val{font-size:2rem;font-weight:300;line-height:1;}
+.obs-unit{font-size:.7rem;color:var(--muted);margin-top:3px;}
+.obs-badge{display:inline-block;padding:2px 7px;border-radius:5px;font-size:.6rem;
+           font-weight:500;margin-top:6px;}
+.b-final{background:rgba(48,209,88,.12);color:var(--green);}
+.b-vs{background:rgba(0,122,255,.12);color:var(--blue);}
+
+/* patient sections in all-patients view */
+.patient-section{background:var(--card);border:.5px solid var(--border);
+                 border-radius:var(--r);padding:14px;margin-bottom:10px;}
+.patient-section-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;
+                         padding-bottom:10px;border-bottom:.5px solid var(--border);}
+.ps-avatar{width:32px;height:32px;border-radius:50%;background:rgba(0,122,255,.15);
+           border:1px solid rgba(0,122,255,.25);display:flex;align-items:center;
+           justify-content:center;font-size:.75rem;font-weight:600;color:var(--blue);}
+.ps-name{font-size:.92rem;font-weight:500;}
+.ps-id{font-size:.68rem;color:var(--muted);}
+.ps-status{margin-left:auto;padding:2px 9px;border-radius:10px;font-size:.62rem;font-weight:600;}
+.s-ok{background:rgba(48,209,88,.12);color:var(--green);}
+.s-alert{background:rgba(255,149,0,.12);color:var(--orange);}
+.s-emergency{background:rgba(255,59,48,.12);color:var(--red);}
+
+/* patient resource / raw */
+.res-row{display:flex;justify-content:space-between;padding:6px 0;
+         border-bottom:.5px solid var(--border);font-size:.82rem;}
+.res-row:last-child{border:none;}
+.rl{color:var(--muted);}
+.rv{font-weight:500;}
+pre{background:var(--surface);border:.5px solid var(--border);border-radius:10px;
+    padding:14px;font-size:.7rem;overflow:auto;max-height:380px;
+    color:var(--muted);font-family:'SF Mono','Courier New',monospace;line-height:1.5;}
+.card{background:var(--card);border:.5px solid var(--border);border-radius:var(--r);padding:14px;}
+.clabel{font-size:.58rem;letter-spacing:.14em;color:var(--muted);
+        text-transform:uppercase;margin-bottom:10px;}
+.last{font-size:.6rem;color:var(--muted);text-align:right;margin-bottom:8px;}
+button{background:rgba(0,122,255,.12);border:.5px solid rgba(0,122,255,.3);
+       color:var(--blue);padding:6px 14px;border-radius:20px;
+       font-size:.75rem;cursor:pointer;margin-top:8px;}
+
+.clinical-note{background:var(--surface);border:.5px solid var(--border);
+               border-left:3px solid var(--orange);border-radius:var(--r);
+               padding:12px;margin-bottom:12px;font-size:.8rem;color:var(--muted);}
+</style>
+</head>
+<body>
+<header>
+  <h1>FHIR R4 Lab Inspector — {{ hospital.name }}</h1>
+  <a class="back" href="{{ url_for('hospital.hospital_dashboard', hospital_id=hospital.id) }}">← Hospital admin</a>
+</header>
+<div class="page">
+  <div class="last">Auto-refreshing every 3s — <span id="ts">--</span></div>
+
+  <div class="clinical-note">
+    Rev1 hardware measures three sensors: MAX30102 (PPG → heart rate),
+    MAX30205 (skin temperature), and LIS331DLTR (acceleration). Only
+    Heart rate and Body temperature map to standard vital-sign LOINC codes,
+    so only those two appear as coded Observations below. Acceleration and
+    raw PPG counts are shown separately as plain telemetry, not FHIR-coded
+    vitals. SpO2, blood pressure, respiratory rate, stress/EDA, and HRV are
+    <strong>not measured by this hardware and are never shown here</strong> —
+    only one physical band exists, so only whichever patient's band is
+    currently bound to it ("Bind live feed" on the hospital admin page) will
+    show any values at all; everyone else correctly shows nothing yet.
+  </div>
+
+  <!-- PATIENT SELECTOR -->
+  <div class="patient-pills" id="patient-pills">
+    <div class="ppill all active" data-pid="all" onclick="selectPatient('all',this)">
+      All patients
+    </div>
+  </div>
+
+  <!-- VIEW TABS -->
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('clinical',this)">Clinical observations</div>
+    <div class="tab" onclick="showTab('patient',this)">Patient resource</div>
+    <div class="tab" onclick="showTab('bundle',this)">Raw bundle</div>
+  </div>
+
+  <!-- CLINICAL -->
+  <div class="tab-pane active" id="tab-clinical">
+    <div id="obs-content">
+      <div style="color:var(--muted);font-size:.8rem;">Loading...</div>
+    </div>
+  </div>
+
+  <!-- PATIENT -->
+  <div class="tab-pane" id="tab-patient">
+    <div id="patient-resource-content">
+      <div style="color:var(--muted);font-size:.8rem;">Loading...</div>
+    </div>
+  </div>
+
+  <!-- BUNDLE -->
+  <div class="tab-pane" id="tab-bundle">
+    <div class="card">
+      <div class="clabel">Raw FHIR bundle JSON</div>
+      <button onclick="toggleBundle()">Toggle JSON</button>
+      <pre id="bundle-raw" style="display:none;margin-top:10px;"></pre>
+    </div>
+  </div>
+</div>
+
+<script>
+const OBS_COLORS = {
+  'Heart rate':'var(--red)','Body temperature':'var(--orange)',
+};
+
+let currentPid = 'all';
+let allPatientsData = [];
+
+function showTab(name, btn) {
+  document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  btn.classList.add('active');
+}
+function toggleBundle(){
+  const el=document.getElementById('bundle-raw');
+  el.style.display=el.style.display==='none'?'block':'none';
+}
+
+function selectPatient(pid, el){
+  currentPid = pid;
+  document.querySelectorAll('.ppill').forEach(p=>p.classList.remove('active'));
+  el.classList.add('active');
+  renderCurrentView();
+}
+
+function initials(name){
+  return (name||'?').split(' ').map(w=>w[0]).join('').toUpperCase().slice(0,2);
+}
+function statusClass(live){
+  return live ? 's-ok' : 's-alert';
+}
+function statusLabel(live){
+  return live ? 'Live' : 'No live data';
+}
+
+// ── RENDER OBSERVATIONS ───────────────────────────────────────
+function renderObsCard(entry, patientName, showPatient){
+  const r    = entry.resource;
+  const code = r.code?.coding?.[0]?.code||'';
+  const name = r.code?.text||'';
+  const val  = r.valueQuantity?.value??'--';
+  const unit = r.valueQuantity?.unit||'';
+  const time = r.effectiveDateTime
+    ? new Date(r.effectiveDateTime).toLocaleTimeString() : '';
+  const disp = typeof val==='number'&&!Number.isInteger(val)?val.toFixed(1):val;
+  const color = OBS_COLORS[name]||'var(--blue)';
+  return `<div class="obs-card">
+    ${showPatient?`<div class="obs-patient">${patientName}</div>`:''}
+    <div class="obs-loinc">LOINC ${code}</div>
+    <div class="obs-name">${name}</div>
+    <div class="obs-val" style="color:${color}">${disp}</div>
+    <div class="obs-unit">${unit}</div>
+    <div>
+      <span class="obs-badge b-final">final</span>
+      <span class="obs-badge b-vs">vital-signs</span>
+    </div>
+    <div style="font-size:.6rem;color:var(--muted);margin-top:5px;">${time}</div>
+  </div>`;
+}
+
+function renderTelemetry(telemetry){
+  if(!telemetry) return '';
+  return `<div style="display:flex;gap:8px;margin-top:8px;">
+    <div class="obs-card" style="flex:1;">
+      <div class="obs-loinc">RAW TELEMETRY — not FHIR-coded</div>
+      <div class="obs-name">Acceleration (X)</div>
+      <div class="obs-val" style="color:var(--teal)">${telemetry.accel_x_mg ?? '--'}</div>
+      <div class="obs-unit">mg</div>
+    </div>
+    <div class="obs-card" style="flex:1;">
+      <div class="obs-loinc">RAW TELEMETRY — not FHIR-coded</div>
+      <div class="obs-name">Worn</div>
+      <div class="obs-val" style="color:var(--purple)">${telemetry.worn === null || telemetry.worn === undefined ? '--' : (telemetry.worn ? 'Yes' : 'No')}</div>
+    </div>
+  </div>`;
+}
+
+// ── RENDER ALL PATIENTS VIEW ──────────────────────────────────
+function renderAllPatients(patients){
+  const content = document.getElementById('obs-content');
+  if(!patients.length){
+    content.innerHTML='<div style="color:var(--muted)">No patients</div>'; return;
+  }
+  content.innerHTML = patients.map(p => {
+    const bundle  = p.fhir||{};
+    const entries = bundle.entry||[];
+    return `
+      <div class="patient-section">
+        <div class="patient-section-header">
+          <div class="ps-avatar">${initials(p.name)}</div>
+          <div>
+            <div class="ps-name">${p.name}</div>
+            <div class="ps-id">HSHL-${(p.id||'').toUpperCase()} · ${p.age ?? '--'} yrs · ${p.city||'--'}</div>
+          </div>
+          <span class="ps-status ${statusClass(p.live)}">
+            ${statusLabel(p.live)}
+          </span>
+        </div>
+        ${entries.length ? `<div class="obs-grid">${entries.map(e=>renderObsCard(e, p.name, false)).join('')}</div>`
+                         : `<div style="color:var(--muted);font-size:.78rem;">No live observations for this patient right now — their band isn't the one currently bound to the Pi's UART feed.</div>`}
+        ${renderTelemetry(p.telemetry)}
+      </div>`;
+  }).join('');
+}
+
+// ── RENDER SINGLE PATIENT VIEW ────────────────────────────────
+function renderSinglePatient(patient){
+  const bundle  = patient.fhir||{};
+  const entries = bundle.entry||[];
+  document.getElementById('obs-content').innerHTML =
+    (entries.length ? `<div class="obs-grid">${entries.map(e=>renderObsCard(e,patient.name,false)).join('')}</div>`
+                    : `<div style="color:var(--muted);font-size:.82rem;">No live observations for this patient right now — their band isn't the one currently bound to the Pi's UART feed.</div>`)
+    + renderTelemetry(patient.telemetry);
+}
+
+// ── RENDER PATIENT RESOURCE TAB ───────────────────────────────
+function renderPatientResource(patients){
+  const el = document.getElementById('patient-resource-content');
+  if(currentPid === 'all'){
+    el.innerHTML = `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px;">
+      ${patients.map(p=>`
+        <div class="card">
+          <div class="clabel">${p.name} — HSHL-${(p.id||'').toUpperCase()}</div>
+          ${[['Resource','Patient'],['ID',p.id],['Name',p.name],
+             ['Gender',p.gender||'--'],['Born',p.birthDate||'--'],
+             ['City',p.city||'--'],['Weight',p.weight?p.weight+'kg':'--'],
+             ['Height',p.height?p.height+'cm':'--'],
+             ['Condition',p.condition||'--'],
+            ].map(([l,v])=>`
+              <div class="res-row">
+                <span class="rl">${l}</span>
+                <span class="rv">${v}</span>
+              </div>`).join('')}
+        </div>`).join('')}
+    </div>`;
+  } else {
+    const p = patients.find(x=>x.id===currentPid);
+    if(!p){ el.innerHTML='<div style="color:var(--muted)">Not found</div>'; return; }
+    el.innerHTML = `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div class="card">
+        <div class="clabel">Parsed patient resource</div>
+        ${[['Resource type','Patient'],['ID',p.id],
+           ['HSHL ref',`HSHL-${(p.id||'').toUpperCase()}`],['Name',p.name],
+           ['Gender',p.gender||'--'],['Born',p.birthDate||'--'],
+           ['City',p.city||'--'],['Country','DE'],['Status','Active'],
+          ].map(([l,v])=>`<div class="res-row"><span class="rl">${l}</span><span class="rv">${v}</span></div>`).join('')}
+      </div>
+      <div class="card">
+        <div class="clabel">Raw patient JSON</div>
+        <pre>${JSON.stringify({resourceType:'Patient',id:p.id,
+          name:[{use:'official',family:(p.name||'').split(' ').slice(-1)[0],
+                 given:[(p.name||'').split(' ')[0]]}],
+          gender:p.gender,birthDate:p.birthDate,
+          address:[{city:p.city,country:'DE'}],
+          identifier:[{system:'urn:hshl',value:`HSHL-${(p.id||'').toUpperCase()}`}]
+        }, null, 2)}</pre>
+      </div>
+    </div>`;
+  }
+}
+
+// ── MAIN RENDER ───────────────────────────────────────────────
+function renderCurrentView(){
+  if(!allPatientsData.length) return;
+  if(currentPid==='all'){
+    renderAllPatients(allPatientsData);
+    renderPatientResource(allPatientsData);
+    document.getElementById('bundle-raw').textContent =
+      JSON.stringify({
+        resourceType:'Bundle', type:'searchset',
+        total:allPatientsData.length,
+        entry:allPatientsData.map(p=>({fullUrl:`urn:uuid:${p.id}`,resource:p.fhir}))
+      }, null, 2);
+  } else {
+    const p = allPatientsData.find(x=>x.id===currentPid);
+    if(!p) return;
+    renderSinglePatient(p);
+    renderPatientResource(allPatientsData);
+    document.getElementById('bundle-raw').textContent = JSON.stringify(p.fhir, null, 2);
+  }
+}
+
+// ── FETCH ─────────────────────────────────────────────────────
+const HOSPITAL_ID = "{{ hospital.id }}";
+
+async function refresh(){
+  allPatientsData = await fetch(`/api/fhir/${HOSPITAL_ID}/bundle`).then(r=>r.json()).catch(()=>[]);
+  document.getElementById('ts').textContent = new Date().toLocaleTimeString();
+
+  // Build patient pills
+  const pillsEl = document.getElementById('patient-pills');
+  const existing = new Set([...pillsEl.querySelectorAll('.ppill')].map(p=>p.dataset.pid));
+  allPatientsData.forEach(p => {
+    if(!existing.has(p.id)){
+      const pill = document.createElement('div');
+      pill.className = 'ppill' + (currentPid===p.id?' active':'');
+      pill.dataset.pid = p.id;
+      pill.textContent = p.name.split(' ')[0]; // first name only
+      pill.onclick = () => selectPatient(p.id, pill);
+      pillsEl.appendChild(pill);
+    }
+  });
+
+  renderCurrentView();
+}
+
+refresh();
+setInterval(refresh, 3000);
+</script>
+</body>
+</html>

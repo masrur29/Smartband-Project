@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ patient.name }} — Smartband</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <h1>{{ patient.name }}</h1>
+    <div class="sub">{{ patient.age }} yrs · {{ patient.gender }} · Band {{ patient.band_id }} · {{ patient.condition or "—" }}</div>
+  </div>
+  <div><span id="status-dot" class="status-dot offline"></span><span id="status-text">checking…</span></div>
+</header>
+
+<main>
+  <div class="grid">
+    <div class="card">
+      <h3>Heart Rate</h3>
+      <div><span class="value" id="v-bpm">--</span><span class="unit">bpm</span></div>
+    </div>
+    <div class="card">
+      <h3>Acceleration (X)</h3>
+      <div><span class="value" id="v-accel">--</span><span class="unit">mg</span></div>
+    </div>
+    <div class="card">
+      <h3>Temperature</h3>
+      <div><span class="value" id="v-temp">--</span><span class="unit">°C</span></div>
+    </div>
+    <div class="card">
+      <h3>Worn</h3>
+      <div><span class="value" id="v-worn">--</span></div>
+    </div>
+  </div>
+
+  <div class="section-title">History</div>
+  <canvas id="history-chart" height="90"></canvas>
+
+  <div class="section-title">Alerts</div>
+  <table>
+    <thead><tr><th>Time</th><th>Triggered by</th></tr></thead>
+    <tbody id="alerts-body"><tr><td colspan="2">No alerts yet.</td></tr></tbody>
+  </table>
+</main>
+
+<script>
+const patientId = "{{ patient.id }}";
+let chart;
+
+async function pollLive() {
+  const res = await fetch(`/api/patient/${patientId}/live`);
+  const d = await res.json();
+  document.getElementById('v-bpm').textContent = d.bpm ?? '--';
+  document.getElementById('v-accel').textContent = d.accel_x ?? '--';
+  document.getElementById('v-temp').textContent = d.temp !== null && d.temp !== undefined ? d.temp.toFixed(1) : '--';
+  document.getElementById('v-worn').textContent = d.worn === null || d.worn === undefined ? '--' : (d.worn ? 'Yes' : 'No');
+  const dot = document.getElementById('status-dot');
+  const text = document.getElementById('status-text');
+  if (d.connected) {
+    dot.className = 'status-dot online';
+    text.textContent = 'Live';
+  } else {
+    dot.className = 'status-dot offline';
+    text.textContent = 'No sensor data';
+  }
+}
+
+async function pollHistory() {
+  const res = await fetch(`/api/patient/${patientId}/history`);
+  const hist = await res.json();
+  const labels = hist.map(h => h.t.split('T').pop());
+  const accel = hist.map(h => h.accel_x);
+  const temp = hist.map(h => h.temp);
+  const bpm = hist.map(h => h.bpm);
+  if (!chart) {
+    const ctx = document.getElementById('history-chart').getContext('2d');
+    chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          { label: 'BPM', data: bpm, borderColor: '#5fd68a', yAxisID: 'y', tension: .2, pointRadius: 0, spanGaps: true },
+          { label: 'Accel X (mg)', data: accel, borderColor: '#4fc3f7', yAxisID: 'y', tension: .2, pointRadius: 0 },
+          { label: 'Temp (°C)', data: temp, borderColor: '#e2543b', yAxisID: 'y1', tension: .2, pointRadius: 0 },
+        ]
+      },
+      options: {
+        scales: {
+          y: { position: 'left', ticks: { color: '#8fa3b0' } },
+          y1: { position: 'right', ticks: { color: '#8fa3b0' }, grid: { drawOnChartArea: false } },
+          x: { ticks: { color: '#8fa3b0', maxTicksLimit: 8 } },
+        },
+        plugins: { legend: { labels: { color: '#e8eef2' } } },
+      }
+    });
+  } else {
+    chart.data.labels = labels;
+    chart.data.datasets[0].data = bpm;
+    chart.data.datasets[1].data = accel;
+    chart.data.datasets[2].data = temp;
+    chart.update();
+  }
+}
+
+async function pollAlerts() {
+  const res = await fetch(`/api/patient/${patientId}/alerts`);
+  const alerts = await res.json();
+  const body = document.getElementById('alerts-body');
+  if (!alerts.length) { body.innerHTML = '<tr><td colspan="2">No alerts yet.</td></tr>'; return; }
+  body.innerHTML = alerts.slice(-20).reverse().map(a =>
+    `<tr><td>${a.timestamp.replace('T', ' ')}</td><td>${a.triggered_by.join(', ')}</td></tr>`
+  ).join('');
+}
+
+function tick() { pollLive(); pollHistory(); pollAlerts(); }
+tick();
+setInterval(tick, 3000);
+</script>
+</body>
+</html>

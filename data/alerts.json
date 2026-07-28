@@ -1,0 +1,7485 @@
+[
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:40:56",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:40:59",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -11,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:02",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -11,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:05",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:08",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:11",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:14",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:17",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:20",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:23",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:26",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:29",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:36",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:39",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:42",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:45",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:48",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:51",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:54",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:41:57",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:00",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:03",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:06",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:09",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:12",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -17,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:15",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -17,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:18",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:21",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:24",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:27",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -18,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:30",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -18,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:36",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:39",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -10,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:42",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -10,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:45",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:48",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:51",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:54",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:42:57",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:00",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:03",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -10,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:06",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -10,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:09",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:12",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:15",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:18",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:21",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:24",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:27",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:30",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:36",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:39",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:42",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:45",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:48",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:52",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:55",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:43:58",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:01",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:04",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:07",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:10",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:13",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:16",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:19",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1045,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:22",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1045,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:25",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:28",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:31",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:34",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:37",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:40",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:43",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:46",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:49",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:52",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:55",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:44:58",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:01",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:04",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:07",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:10",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:13",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:16",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:19",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:22",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:25",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:28",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:31",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:34",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:37",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:40",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:43",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:46",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:49",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:52",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:55",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:45:58",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:01",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:04",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:08",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:11",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:14",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:17",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:20",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:23",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:26",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:29",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:32",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:35",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:38",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:41",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:44",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:47",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:50",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:53",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:56",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:46:59",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1045,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:02",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1045,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:05",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:08",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:11",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:14",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:17",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1045,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:20",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1045,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:23",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:26",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:29",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:32",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:35",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:38",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:41",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:44",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:47",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:50",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:53",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:56",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:47:59",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:02",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:05",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:08",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:11",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:14",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:17",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:20",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:24",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:27",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1052,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:30",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1052,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:36",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:39",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:42",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:45",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:48",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:51",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:54",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:48:57",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:00",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:03",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:06",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:09",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:12",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:15",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:18",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:21",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:24",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:27",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:30",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:36",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:39",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:42",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:45",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:48",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:51",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:54",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:49:57",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:00",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:03",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:06",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:09",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:12",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:15",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:18",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:21",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:24",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:27",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1046,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:30",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:36",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:39",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:43",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:46",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:49",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1043,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:52",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1043,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:55",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:50:58",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:01",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:04",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:07",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:10",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:13",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:16",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:19",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:22",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:25",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:28",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:37",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:40",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:43",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:46",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:49",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:51:52",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1050,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:01",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:04",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:07",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:10",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:13",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:16",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:19",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1047,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:25",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:28",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:31",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1051,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:34",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:37",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:40",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:43",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1048,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:46",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1043,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:49",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1043,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:52",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1040,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:55",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1040,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:52:58",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1023,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:01",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1023,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:04",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1028,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:07",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1028,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:10",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1005,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:13",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1005,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:16",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:19",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:22",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:26",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:29",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:32",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:35",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:38",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:47",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:50",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:53",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:56",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:53:59",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:02",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:05",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:08",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:11",
+    "triggered_by": [
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 0,
+      "temp": 0.0,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:32",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 21,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:35",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 21,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:38",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 21,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:41",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 20,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:44",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 20,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:47",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 21,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:50",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 21,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:53",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 20,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:56",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 20,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:54:59",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 27,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:02",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 27,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:05",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -204,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:08",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -204,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:11",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 531,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:14",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 531,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:17",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1058,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:20",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1058,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:23",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -6,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:26",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -6,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:29",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -6,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:32",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:35",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": -13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:38",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 27,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:41",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 27,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:44",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 24,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:47",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 24,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:50",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 27,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:53",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 27,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:56",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 26,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:55:59",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 26,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T16:56:02",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 26,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:01:50",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:01:53",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:01:56",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:01:59",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:02",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:05",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:08",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:11",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 9,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:14",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 9,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:17",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:20",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:23",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:26",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:30",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:36",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:39",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:42",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:45",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:48",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:51",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:54",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:02:57",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:00",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:03",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:06",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:09",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:12",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:15",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:18",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:21",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:24",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:27",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:30",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 11,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:36",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 11,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:39",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:42",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:45",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:48",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:51",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:54",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:03:57",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:00",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:03",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:06",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:09",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:12",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:15",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:18",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:21",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:24",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 11,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:27",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 11,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:30",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:36",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:39",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:42",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 11,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:45",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 11,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:48",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 11,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:51",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 11,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:54",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:04:57",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:00",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:04",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:07",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 10,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:10",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 10,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:13",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:16",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:19",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:22",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:25",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:28",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:31",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:34",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:37",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:40",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:43",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:46",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:49",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:52",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:55",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:05:58",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:06:01",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:06:04",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:06:07",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:06:10",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:06:13",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:06:16",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:06:19",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:06:22",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:06:25",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:06:28",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:01",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 12,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:04",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:07",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:10",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:13",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:16",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:19",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:22",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:25",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:28",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:31",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:34",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:37",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:40",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:43",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:47",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:50",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:53",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 18,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:56",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 18,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:12:59",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:02",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:05",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:08",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:11",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:14",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:17",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 14,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:20",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:23",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:26",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:29",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:32",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:35",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 13,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:38",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:41",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 15,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:44",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 7,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:47",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 7,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:13:50",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 7,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:18:11",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:18:14",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 68,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:18:17",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 68,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:18:20",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 67,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:18:23",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 67,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:18:26",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 67,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:18:50",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:18:53",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 67,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:18:56",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 67,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:18:59",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:02",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:05",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 63,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:08",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 63,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:11",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 63,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:14",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 63,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:17",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 68,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:20",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 68,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:23",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 65,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:26",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 65,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:29",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:32",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:35",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:38",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:41",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:44",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 69,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:47",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 69,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:50",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 69,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:19:59",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 67,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:02",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 67,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:05",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 65,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:09",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 65,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:12",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 63,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:15",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 63,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:18",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 67,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:21",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 67,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:24",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 69,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:27",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 69,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:30",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 65,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 65,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:36",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 67,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:39",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 67,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:42",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:45",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:48",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:20:51",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 66,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:03",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1040,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:06",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1032,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:09",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1032,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:12",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1031,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:15",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1031,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:18",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1040,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:21",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1040,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:24",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1040,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:27",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1040,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:30",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1033,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1033,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:36",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1033,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:39",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1033,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:42",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1033,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:48",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1031,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:51",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1040,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:54",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1040,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:23:57",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1031,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:00",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1031,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:03",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1042,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:06",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1042,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:09",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:12",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1049,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:15",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1043,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:18",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1043,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:21",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1045,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:24",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 1045,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:27",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 68,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:30",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 68,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:33",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 975,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:37",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 975,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:40",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 955,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:43",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 955,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:46",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 955,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:49",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 955,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:52",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 955,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  },
+  {
+    "patient_id": "p001",
+    "timestamp": "2026-07-14T17:24:55",
+    "triggered_by": [
+      "FEVER",
+      "BAND_NOT_WORN",
+      "BRADYCARDIA"
+    ],
+    "reading": {
+      "accel_x": 955,
+      "temp": 43.82,
+      "bpm": 0,
+      "worn": false
+    }
+  }
+]

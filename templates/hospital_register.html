@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ 'Hospital Login' if login_mode else 'Register Hospital' }} — Smartband</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<main>
+  <div class="card form-card">
+    <h1 style="margin-top:0">{{ 'Hospital Login' if login_mode else 'Register Hospital' }}</h1>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}<div class="flash">{{ messages[0] }}</div>{% endif %}
+    {% endwith %}
+
+    {% if login_mode %}
+    <form method="POST" action="{{ url_for('hospital.hospital_login') }}">
+      <div class="field"><label>Hospital ID</label><input name="hospital_id" required></div>
+      <div class="field"><label>Password</label><input type="password" name="password" required></div>
+      <button class="btn" type="submit">Log in</button>
+      <a class="btn secondary" href="{{ url_for('hospital.hospital_register') }}">Register instead</a>
+    </form>
+    {% else %}
+    <form method="POST" action="{{ url_for('hospital.hospital_register') }}">
+      <div class="field"><label>Hospital name</label><input name="name" required></div>
+      <div class="field"><label>Password</label><input type="password" name="password" required></div>
+      <button class="btn" type="submit">Register</button>
+      <a class="btn secondary" href="{{ url_for('hospital.hospital_login') }}">Log in instead</a>
+    </form>
+    {% endif %}
+  </div>
+  <a class="back" style="display:block;text-align:center;margin-top:14px;color:#4fc3f7;font-size:.85rem;" href="{{ url_for('public.register_page') }}">Are you a patient? Register yourself →</a>
+  <a class="back" style="display:block;text-align:center;margin-top:8px;color:#4fc3f7;font-size:.85rem;" href="{{ url_for('public.find_page') }}">Already registered? Find my dashboard →</a>
+  <a class="back" style="display:block;text-align:center;margin-top:8px;color:#8fa3b0;font-size:.8rem;" href="{{ url_for('hospital.hospital_dashboard', hospital_id='SELF') }}">Staff: view self-registered patients</a>
+</main>
+</body>
+</html>

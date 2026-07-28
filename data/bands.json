@@ -1,0 +1,23 @@
+[
+  {
+    "band_id": "SB-BFIEFL",
+    "hospital_id": "SELF",
+    "status": "available",
+    "patient_id": null,
+    "active": true
+  },
+  {
+    "band_id": "SB-1TQ09D",
+    "hospital_id": "SELF",
+    "status": "available",
+    "patient_id": null,
+    "active": false
+  },
+  {
+    "band_id": "SB-3Q4V8F",
+    "hospital_id": "SELF",
+    "status": "available",
+    "patient_id": null,
+    "active": false
+  }
+]

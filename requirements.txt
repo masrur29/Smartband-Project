@@ -1,0 +1,5 @@
+Flask>=3.0.0
+pyserial>=3.5
+Pillow>=10.0.0
+Adafruit-Blinka>=8.23.0
+luma.oled>=3.13.0

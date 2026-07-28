@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Doctor — {{ hospital.name }}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="alert-banners"></div>
+<header class="topbar">
+  <div>
+    <h1>Doctor Dashboard</h1>
+    <div class="sub">{{ hospital.name }} ({{ hospital.id }})</div>
+  </div>
+  <a class="btn secondary" href="{{ url_for('hospital.hospital_dashboard', hospital_id=hospital.id) }}">Hospital admin</a>
+</header>
+
+<main>
+  <div class="section-title">Patients</div>
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Age</th><th>Band</th><th>Status</th><th>BPM</th><th>Accel X</th><th>Temp</th><th>Worn</th><th></th></tr>
+    </thead>
+    <tbody id="patients-body">
+      <tr><td colspan="9">Loading…</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">Recent alerts</div>
+  <table>
+    <thead><tr><th>Time</th><th>Patient</th><th>Triggered by</th></tr></thead>
+    <tbody id="alerts-body"><tr><td colspan="3">No alerts yet.</td></tr></tbody>
+  </table>
+</main>
+
+<script src="{{ url_for('static', filename='alert-notify.js') }}"></script>
+<script>
+const hospitalId = "{{ hospital.id }}";
+let patientNames = {};
+
+async function pollPatients() {
+  const res = await fetch(`/api/doctor/${hospitalId}/patients`);
+  const rows = await res.json();
+  const body = document.getElementById('patients-body');
+  patientNames = {};
+  rows.forEach(r => { patientNames[r.patient.id] = r.patient.name; });
+  if (!rows.length) { body.innerHTML = '<tr><td colspan="9">No patients registered yet.</td></tr>'; return; }
+  body.innerHTML = rows.map(r => {
+    const live = r.live;
+    const online = live.connected;
+    return `<tr>
+      <td><a href="/patient/${r.patient.id}" style="color:#4fc3f7">${r.patient.name}</a></td>
+      <td>${r.patient.age}</td>
+      <td>${r.patient.band_id}</td>
+      <td><span class="status-dot ${online ? 'online' : 'offline'}"></span>${online ? 'Live' : 'Offline'}</td>
+      <td>${live.bpm ?? '--'}</td>
+      <td>${live.accel_x ?? '--'}</td>
+      <td>${live.temp !== null && live.temp !== undefined ? live.temp.toFixed(1) : '--'}</td>
+      <td>${live.worn === null || live.worn === undefined ? '--' : (live.worn ? 'Yes' : 'No')}</td>
+      <td><a class="btn secondary" href="/patient/${r.patient.id}">View</a></td>
+    </tr>`;
+  }).join('');
+}
+
+async function pollAlerts() {
+  const res = await fetch(`/api/doctor/${hospitalId}/alerts`);
+  const alerts = await res.json();
+  const body = document.getElementById('alerts-body');
+  if (!alerts.length) { body.innerHTML = '<tr><td colspan="3">No alerts yet.</td></tr>'; return; }
+  body.innerHTML = alerts.slice(-20).reverse().map(a =>
+    `<tr><td>${a.timestamp.replace('T',' ')}</td><td>${patientNames[a.patient_id] || a.patient_id}</td><td>${a.triggered_by.join(', ')}</td></tr>`
+  ).join('');
+  window.handleAlertPoll(alerts, id => patientNames[id], 'alert-banners');
+}
+
+function tick() { pollPatients().then(pollAlerts); }
+tick();
+setInterval(tick, 4000);
+</script>
+</body>
+</html>

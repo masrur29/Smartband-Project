@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ hospital.name }} — Admin</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="alert-banners"></div>
+<header class="topbar">
+  <div>
+    <h1>{{ hospital.name }}</h1>
+    <div class="sub">Hospital ID: {{ hospital.id }}</div>
+  </div>
+  <a class="btn secondary" href="{{ url_for('doctor.doctor_dashboard', hospital_id=hospital.id) }}">Doctor view</a>
+  <a class="btn secondary" href="{{ url_for('public.fhir_view', hospital_id=hospital.id) }}">FHIR Lab</a>
+</header>
+
+<main>
+  <div class="section-title">Bands</div>
+  <p class="sub" style="color:var(--muted)">Only one band can be "active" at a time — that's the one physically wired to this Pi over UART.</p>
+  <table>
+    <thead><tr><th>Band ID</th><th>Status</th><th>Patient</th><th>Live feed</th><th></th></tr></thead>
+    <tbody id="bands-body">
+      {% for b in bands %}
+      <tr data-band="{{ b.band_id }}">
+        <td>{{ b.band_id }}</td>
+        <td><span class="tag {{ b.status }}">{{ b.status }}</span></td>
+        <td>{{ b.patient_id or '—' }}</td>
+        <td>{% if b.active %}<span class="tag active">ACTIVE</span>{% else %}—{% endif %}</td>
+        <td>{% if not b.active %}<button class="btn secondary activate-btn" data-band="{{ b.band_id }}">Bind live feed</button>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <button class="btn" id="add-band-btn" style="margin-top:12px">+ Add band</button>
+
+  <div class="section-title">Register patient</div>
+  <div class="card" style="max-width:480px">
+    <form id="register-form">
+      <div class="field"><label>Name</label><input name="name" required></div>
+      <div class="field"><label>Age</label><input name="age" type="number" required></div>
+      <div class="field"><label>Gender</label>
+        <select name="gender"><option>male</option><option>female</option><option>other</option></select>
+      </div>
+      <div class="field"><label>Condition / note</label><input name="condition"></div>
+      <div class="field"><label>Band</label>
+        <select name="band_id" id="band-select">
+          {% for b in bands if b.status == 'available' %}
+          <option value="{{ b.band_id }}">{{ b.band_id }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <button class="btn" type="submit">Register patient</button>
+    </form>
+  </div>
+
+  <div class="section-title">Patients</div>
+  <table>
+    <thead><tr><th>Name</th><th>Age</th><th>Band</th><th></th></tr></thead>
+    <tbody>
+      {% for p in patients %}
+      <tr>
+        <td><a href="/patient/{{ p.id }}" style="color:#4fc3f7">{{ p.name }}</a></td>
+        <td>{{ p.age }}</td>
+        <td>{{ p.band_id }}</td>
+        <td><button class="btn danger discharge-btn" data-patient="{{ p.id }}">Discharge</button></td>
+      </tr>
+      {% else %}
+      <tr><td colspan="4">No patients registered yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <div class="section-title">Recent alerts</div>
+  <table>
+    <thead><tr><th>Time</th><th>Patient</th><th>Triggered by</th></tr></thead>
+    <tbody id="alerts-body"><tr><td colspan="3">No alerts yet.</td></tr></tbody>
+  </table>
+</main>
+
+<script src="{{ url_for('static', filename='alert-notify.js') }}"></script>
+<script>
+const hospitalId = "{{ hospital.id }}";
+const patientNames = {
+  {% for p in patients %}"{{ p.id }}": {{ p.name|tojson }},{% endfor %}
+};
+
+document.getElementById('add-band-btn').addEventListener('click', async () => {
+  await fetch(`/api/hospital/${hospitalId}/bands/add`, {
+    method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({count: 1})
+  });
+  location.reload();
+});
+
+document.querySelectorAll('.activate-btn').forEach(btn => {
+  btn.addEventListener('click', async () => {
+    const bandId = btn.dataset.band;
+    await fetch(`/api/hospital/${hospitalId}/bands/${bandId}/activate`, { method: 'POST' });
+    location.reload();
+  });
+});
+
+document.querySelectorAll('.discharge-btn').forEach(btn => {
+  btn.addEventListener('click', async () => {
+    if (!confirm('Discharge this patient and free their band?')) return;
+    const patientId = btn.dataset.patient;
+    await fetch(`/api/hospital/patients/${patientId}/discharge`, { method: 'POST' });
+    location.reload();
+  });
+});
+
+document.getElementById('register-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const data = Object.fromEntries(fd.entries());
+  await fetch(`/api/hospital/${hospitalId}/patients/register`, {
+    method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)
+  });
+  location.reload();
+});
+
+async function pollAlerts() {
+  const res = await fetch(`/api/doctor/${hospitalId}/alerts`);
+  const alerts = await res.json();
+  const body = document.getElementById('alerts-body');
+  if (!alerts.length) { body.innerHTML = '<tr><td colspan="3">No alerts yet.</td></tr>'; return; }
+  body.innerHTML = alerts.slice(-20).reverse().map(a =>
+    `<tr><td>${a.timestamp.replace('T',' ')}</td><td>${patientNames[a.patient_id] || a.patient_id}</td><td>${a.triggered_by.join(', ')}</td></tr>`
+  ).join('');
+  window.handleAlertPoll(alerts, id => patientNames[id], 'alert-banners');
+}
+pollAlerts();
+setInterval(pollAlerts, 4000);
+</script>
+</body>
+</html>

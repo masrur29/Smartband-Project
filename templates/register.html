@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — Smartband V001</title>
+<style>
+:root{
+  --bg:#000;--card:#111;--border:#1e1e1e;--surface:#0a0a0a;
+  --text:#f0f0f0;--muted:#555;--blue:#007aff;--green:#30d158;
+  --red:#ff3b30;--orange:#ff9500;--teal:#5ac8fa;--r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);min-height:100vh;
+     font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',sans-serif;
+     display:flex;flex-direction:column;align-items:center;padding:40px 16px;}
+
+.logo{display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:32px;}
+.logo-ring{width:52px;height:52px;border-radius:50%;
+           border:2px solid var(--blue);display:flex;align-items:center;
+           justify-content:center;position:relative;}
+.logo-ring::after{content:'';position:absolute;width:14px;height:14px;
+                  border-radius:50%;background:var(--blue);}
+.logo-name{font-size:1.2rem;font-weight:600;letter-spacing:.05em;}
+.logo-sub{font-size:.75rem;color:var(--muted);}
+
+.card{background:var(--card);border:.5px solid var(--border);border-radius:var(--r);
+      padding:28px;width:100%;max-width:480px;}
+
+/* ── FORM STATE ── */
+#form-view{}
+#success-view{display:none;text-align:center;}
+
+.card-title{font-size:1.2rem;font-weight:500;margin-bottom:6px;}
+.card-sub{font-size:.8rem;color:var(--muted);margin-bottom:24px;line-height:1.5;}
+
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+@media(max-width:480px){.form-grid{grid-template-columns:1fr;}}
+.field-lbl{font-size:.6rem;letter-spacing:.1em;color:var(--muted);
+           text-transform:uppercase;margin-bottom:4px;}
+.field-inp{width:100%;background:var(--surface);border:.5px solid var(--border);
+           color:var(--text);padding:10px 12px;border-radius:8px;
+           font-size:.9rem;outline:none;font-family:inherit;transition:border-color .2s;}
+.field-inp:focus{border-color:rgba(0,122,255,.5);}
+.field-inp option{background:#111;}
+
+.full{grid-column:1/-1;}
+
+.submit-btn{width:100%;background:var(--blue);border:none;color:#fff;
+            padding:13px;border-radius:20px;font-size:.95rem;font-weight:500;
+            cursor:pointer;margin-top:16px;transition:opacity .2s;}
+.submit-btn:hover{opacity:.88;}
+.submit-btn:disabled{opacity:.4;cursor:not-allowed;}
+
+.form-error{color:var(--red);font-size:.78rem;margin-top:8px;
+            text-align:center;display:none;}
+.form-error.show{display:block;}
+
+/* ── SUCCESS STATE ── */
+.band-id-box{background:var(--surface);border:1.5px solid var(--blue);
+             border-radius:12px;padding:24px;margin:20px 0;text-align:center;}
+.band-id-label{font-size:.65rem;letter-spacing:.14em;color:var(--muted);
+               text-transform:uppercase;margin-bottom:8px;}
+.band-id-value{font-size:2.4rem;font-weight:600;color:var(--blue);
+               letter-spacing:.12em;font-family:'SF Mono','Courier New',monospace;}
+.band-id-copy{background:rgba(0,122,255,.12);border:.5px solid rgba(0,122,255,.3);
+              color:var(--blue);padding:7px 20px;border-radius:20px;
+              font-size:.8rem;cursor:pointer;margin-top:14px;display:inline-block;}
+.band-id-copy:hover{background:rgba(0,122,255,.22);}
+
+.success-icon{font-size:3rem;margin-bottom:12px;}
+.success-title{font-size:1.2rem;font-weight:500;margin-bottom:6px;}
+.success-sub{font-size:.82rem;color:var(--muted);line-height:1.6;margin-bottom:4px;}
+
+.steps{background:var(--surface);border:.5px solid var(--border);
+       border-radius:var(--r);padding:16px;margin-top:16px;text-align:left;}
+.step{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px;}
+.step:last-child{margin-bottom:0;}
+.step-num{width:22px;height:22px;border-radius:50%;background:rgba(0,122,255,.15);
+          color:var(--blue);font-size:.72rem;font-weight:700;
+          display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-text{font-size:.8rem;color:var(--muted);line-height:1.5;}
+.step-text strong{color:var(--text);}
+
+.register-again{background:var(--card);border:.5px solid var(--border);
+                color:var(--muted);padding:8px 20px;border-radius:20px;
+                font-size:.8rem;cursor:pointer;margin-top:14px;display:inline-block;}
+.register-again:hover{color:var(--text);}
+.back{color:var(--blue);font-size:.8rem;text-decoration:none;
+      display:block;text-align:center;margin-top:16px;}
+</style>
+</head>
+<body>
+
+<div class="logo">
+  <div class="logo-ring"></div>
+  <div class="logo-name">Smartband V001</div>
+  <div class="logo-sub">HSHL · Patient Registration</div>
+</div>
+
+<div class="card">
+
+  <!-- FORM VIEW -->
+  <div id="form-view">
+    <div class="card-title">Create your patient profile</div>
+    <div class="card-sub">Register your details to receive a unique Band ID.
+    Share this ID with your doctor so they can monitor your health data.</div>
+
+    <div class="form-grid">
+      <div class="full">
+        <div class="field-lbl">Full name *</div>
+        <input class="field-inp" id="r-name" type="text" placeholder="Your full name">
+      </div>
+      <div>
+        <div class="field-lbl">Gender</div>
+        <select class="field-inp" id="r-gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div>
+        <div class="field-lbl">Date of birth</div>
+        <input class="field-inp" id="r-dob" type="date">
+      </div>
+      <div>
+        <div class="field-lbl">Weight (kg)</div>
+        <input class="field-inp" id="r-weight" type="number" step="0.1" min="0" placeholder="e.g. 72">
+      </div>
+      <div>
+        <div class="field-lbl">Height (cm)</div>
+        <input class="field-inp" id="r-height" type="number" min="0" placeholder="e.g. 170">
+      </div>
+      <div class="full">
+        <div class="field-lbl">City</div>
+        <input class="field-inp" id="r-city" type="text" placeholder="Your city">
+      </div>
+      <div class="full">
+        <div class="field-lbl">Medical condition / notes (optional)</div>
+        <input class="field-inp" id="r-condition" type="text"
+               placeholder="e.g. Type 2 diabetes, hypertension...">
+      </div>
+    </div>
+
+    <div class="form-error" id="r-error">Name is required.</div>
+
+    <button class="submit-btn" id="r-submit" onclick="submitRegister()">
+      Register and get my Band ID
+    </button>
+  </div>
+
+  <!-- SUCCESS VIEW -->
+  <div id="success-view">
+    <div class="success-icon">✓</div>
+    <div class="success-title">You're registered!</div>
+    <div class="success-sub">Your unique Band ID is shown below.<br>
+    Share it with your doctor to be added to their monitoring dashboard.</div>
+
+    <div class="band-id-box">
+      <div class="band-id-label">Your Band ID</div>
+      <div class="band-id-value" id="s-band-id">SB-XXXXXX</div>
+      <div class="band-id-copy" onclick="copyBandId()">Copy ID</div>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>Write down your Band ID</strong> — you'll need it when visiting your doctor or clinic.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>Your doctor can already see you</strong> — self-registered patients appear automatically on the "Self-Registered Patients" doctor dashboard, no code entry needed. Share the Band ID anyway so they can match it to the physical wristband.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>Wear the Smartband</strong> — only one Rev1 unit exists right now, so a staff member still needs to open the Hospital Admin page and click "Bind live feed" on your Band ID before your vitals go live. Once bound, heart rate and temperature update every few seconds on your dashboard.</div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:16px;">
+      <a href="/" id="s-dashboard-link" style="background:rgba(0,122,255,.15);border:.5px solid rgba(0,122,255,.3);
+           color:var(--blue);padding:9px 24px;border-radius:20px;font-size:.82rem;
+           text-decoration:none;display:inline-block;">Go to my dashboard</a>
+    <button class="register-again" onclick="resetForm()">Register someone else</button>
+    </div>
+  </div>
+
+</div>
+
+<a class="back" href="/">← Back to dashboard</a>
+<a class="back" href="/find">Already registered? Find my dashboard →</a>
+
+<script>
+// Auto-fill age from DOB
+document.getElementById('r-dob').addEventListener('change', function() {
+  const year = parseInt(this.value.split('-')[0]);
+  if(year > 1900 && year < 2030) {
+    // Age shown in condition placeholder only — no separate age field needed
+  }
+});
+
+async function submitRegister() {
+  const name = document.getElementById('r-name').value.trim();
+  if(!name) {
+    const err = document.getElementById('r-error');
+    err.textContent = 'Full name is required.';
+    err.classList.add('show');
+    return;
+  }
+  document.getElementById('r-error').classList.remove('show');
+  const btn = document.getElementById('r-submit');
+  btn.disabled = true;
+  btn.textContent = 'Registering...';
+
+  const payload = {
+    name,
+    gender:    document.getElementById('r-gender').value,
+    birthDate: document.getElementById('r-dob').value,
+    weight:    document.getElementById('r-weight').value || null,
+    height:    document.getElementById('r-height').value || null,
+    city:      document.getElementById('r-city').value,
+    condition: document.getElementById('r-condition').value,
+  };
+
+  try {
+    const res  = await fetch('/api/register', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload),
+    });
+    const data = await res.json();
+    if(data.success) {
+      document.getElementById('s-band-id').textContent = data.band_id;
+      document.getElementById('form-view').style.display    = 'none';
+      document.getElementById('success-view').style.display = 'block';
+      document.getElementById('s-dashboard-link').href = `/patient/${data.patient_id}`;
+      // Save to localStorage so this device can find its own page later
+      localStorage.setItem('my_band_id', data.band_id);
+      localStorage.setItem('my_patient_id', data.patient_id);
+    } else {
+      const err = document.getElementById('r-error');
+      err.textContent = data.error || 'Registration failed.';
+      err.classList.add('show');
+    }
+  } catch(e) {
+    const err = document.getElementById('r-error');
+    err.textContent = 'Network error — please try again.';
+    err.classList.add('show');
+  }
+  btn.disabled = false;
+  btn.textContent = 'Register and get my Band ID';
+}
+
+function copyBandId() {
+  const id = document.getElementById('s-band-id').textContent;
+  navigator.clipboard.writeText(id).then(() => {
+    const btn = document.querySelector('.band-id-copy');
+    btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = 'Copy ID'; }, 2000);
+  });
+}
+
+function resetForm() {
+  localStorage.removeItem('my_band_id');
+  ['r-name','r-weight','r-height','r-city','r-condition'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  document.getElementById('r-dob').value    = '';
+  document.getElementById('r-gender').value = 'male';
+  document.getElementById('r-error').classList.remove('show');
+  document.getElementById('form-view').style.display    = 'block';
+  document.getElementById('success-view').style.display = 'none';
+}
+</script>
+</body>
+</html>

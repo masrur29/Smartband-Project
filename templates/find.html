@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find my dashboard — Smartband V001</title>
+<style>
+:root{--bg:#000;--card:#111;--border:#1e1e1e;--surface:#0a0a0a;--text:#f0f0f0;--muted:#555;--blue:#007aff;--red:#ff3b30;--r:14px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',sans-serif;display:flex;flex-direction:column;align-items:center;padding:60px 16px;}
+.card{background:var(--card);border:.5px solid var(--border);border-radius:var(--r);padding:28px;width:100%;max-width:420px;}
+.card-title{font-size:1.2rem;font-weight:500;margin-bottom:6px;}
+.card-sub{font-size:.8rem;color:var(--muted);margin-bottom:20px;line-height:1.5;}
+.field-lbl{font-size:.6rem;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-bottom:4px;}
+.field-inp{width:100%;background:var(--surface);border:.5px solid var(--border);color:var(--text);padding:10px 12px;border-radius:8px;font-size:.95rem;outline:none;font-family:'SF Mono','Courier New',monospace;letter-spacing:.08em;text-transform:uppercase;}
+.field-inp:focus{border-color:rgba(0,122,255,.5);}
+.submit-btn{width:100%;background:var(--blue);border:none;color:#fff;padding:13px;border-radius:20px;font-size:.95rem;font-weight:500;cursor:pointer;margin-top:16px;}
+.submit-btn:disabled{opacity:.4;}
+.err{color:var(--red);font-size:.78rem;margin-top:8px;text-align:center;display:none;}
+.err.show{display:block;}
+.back{color:var(--blue);font-size:.8rem;text-decoration:none;display:block;text-align:center;margin-top:16px;}
+.remembered{background:var(--surface);border:.5px solid var(--border);border-radius:10px;padding:14px;margin-bottom:18px;font-size:.82rem;color:var(--muted);}
+.remembered a{color:var(--blue);}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="card-title">Find my dashboard</div>
+  <div class="card-sub">Enter the Band ID you were given when you registered.</div>
+
+  <div class="remembered" id="remembered" style="display:none;">
+    This browser remembers a previous registration —
+    <a href="#" id="remembered-link">go straight to that dashboard</a>.
+  </div>
+
+  <div class="field-lbl">Band ID</div>
+  <input class="field-inp" id="band-id" placeholder="SB-XXXXXX">
+  <div class="err" id="err">Not found.</div>
+  <button class="submit-btn" id="submit" onclick="lookup()">Go to my dashboard</button>
+</div>
+<a class="back" href="/register">Don't have a Band ID? Register instead →</a>
+
+<script>
+const remembered = localStorage.getItem('my_patient_id');
+if (remembered) {
+  document.getElementById('remembered').style.display = 'block';
+  document.getElementById('remembered-link').href = `/patient/${remembered}`;
+}
+
+async function lookup() {
+  const bandId = document.getElementById('band-id').value.trim().toUpperCase();
+  const err = document.getElementById('err');
+  err.classList.remove('show');
+  if (!bandId) { err.textContent = 'Enter a Band ID.'; err.classList.add('show'); return; }
+  const btn = document.getElementById('submit');
+  btn.disabled = true;
+  try {
+    const res = await fetch(`/api/find-patient?band_id=${encodeURIComponent(bandId)}`);
+    const data = await res.json();
+    if (data.success) {
+      window.location.href = `/patient/${data.patient_id}`;
+    } else {
+      err.textContent = data.error || 'Not found.';
+      err.classList.add('show');
+    }
+  } catch(e) {
+    err.textContent = 'Network error — please try again.';
+    err.classList.add('show');
+  }
+  btn.disabled = false;
+}
+document.getElementById('band-id').addEventListener('keydown', e => { if (e.key === 'Enter') lookup(); });
+</script>
+</body>
+</html>
