@@ -94,3 +94,10 @@ def api_claim_patient(hospital_id):
     if not patient:
         return jsonify({"success": False, "error": "No patient found for that Band ID."}), 404
     return jsonify({"success": True, "patient_id": patient["id"], "name": patient["name"]})
+    
+@hospital_bp.route("/hospital/<hospital_id>/activate")
+def activate_band_page(hospital_id):
+    hospital = storage.get_hospital(hospital_id)
+    if not hospital:
+        return redirect(url_for("hospital.hospital_login"))
+    return render_template("activate_band.html", hospital=hospital)

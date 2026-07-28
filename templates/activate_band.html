@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activate Band — {{ hospital.name }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div style="max-width:420px;margin:60px auto;padding:20px;">
+    <h1>Activate a Band</h1>
+    <p>Bind the live data feed to this Band ID. Only one band can be active at a time — activating this one deactivates any other.</p>
+
+    <input type="text" id="bandId" placeholder="e.g. SB-BFIEFL" style="width:100%;padding:10px;margin-bottom:10px;">
+    <button id="activateBtn" style="width:100%;padding:12px;">Activate Band</button>
+
+    <p id="result" style="margin-top:16px;"></p>
+
+    <p style="margin-top:30px;">
+      <a href="{{ url_for('hospital.hospital_dashboard', hospital_id=hospital.id) }}">&larr; Back to dashboard</a>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById("activateBtn").addEventListener("click", async () => {
+      const bandId = document.getElementById("bandId").value.trim().toUpperCase();
+      const resultEl = document.getElementById("result");
+      if (!bandId) {
+        resultEl.textContent = "Please enter a Band ID.";
+        return;
+      }
+      try {
+        const res = await fetch(`/api/hospital/{{ hospital.id }}/bands/${bandId}/activate`, {
+          method: "POST"
+        });
+        const data = await res.json();
+        if (data && data.band_id) {
+          resultEl.textContent = `Activated: ${data.band_id}`;
+          resultEl.style.color = "green";
+        } else {
+          resultEl.textContent = "Could not activate that band.";
+          resultEl.style.color = "red";
+        }
+      } catch (e) {
+        resultEl.textContent = "Request failed: " + e.message;
+        resultEl.style.color = "red";
+      }
+    });
+  </script>
+</body>
+</html>
