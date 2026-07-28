@@ -3,6 +3,8 @@ from flask import Blueprint, render_template, jsonify, abort
 
 import core.storage as storage
 import core.serial_reader as serial_reader
+import core.firebase_client as firebase_client
+from config.settings import IS_CLOUD
 
 doctor_bp = Blueprint("doctor", __name__)
 
@@ -22,7 +24,9 @@ def doctor_patients(hospital_id):
     out = []
     for p in patients:
         band = storage.get_band(p["band_id"])
-        if band and band.get("active"):
+        if IS_CLOUD:
+            snap = firebase_client.get_latest_reading(p["id"])
+        elif band and band.get("active"):
             snap = serial_reader.get_latest()
         else:
             snap = {"accel_x": None, "temp": None, "bpm": None, "worn": None, "connected": False}

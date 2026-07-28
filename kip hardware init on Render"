@@ -1,0 +1,29 @@
+[1mdiff --git a/app.py b/app.py[m
+[1mindex 921cd81..e6ef1c3 100644[m
+[1m--- a/app.py[m
+[1m+++ b/app.py[m
+[36m@@ -37,6 +37,8 @@[m [mdef create_app():[m
+ app = create_app()[m
+ [m
+ if __name__ == "__main__":[m
+[31m-    serial_reader.start()[m
+[31m-    loop.start()[m
+[32m+[m[32m    from config.settings import IS_CLOUD[m
+[32m+[m[32m    if not IS_CLOUD:[m
+[32m+[m[32m        serial_reader.start()[m
+[32m+[m[32m        loop.start()[m
+     app.run(host=HOST, port=PORT, debug=DEBUG, use_reloader=False)[m
+[1mdiff --git a/config/settings.py b/config/settings.py[m
+[1mindex 1ffb51f..bba8ac6 100644[m
+[1m--- a/config/settings.py[m
+[1m+++ b/config/settings.py[m
+[36m@@ -5,6 +5,9 @@[m
+ import os[m
+ [m
+ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))[m
+[32m+[m[32m# Set to "true" on Render (via environment variable) to skip hardware-[m
+[32m+[m[32m# specific init (GPIO, UART) that only exists on the physical Pi.[m
+[32m+[m[32mIS_CLOUD = os.environ.get("IS_CLOUD", "false").lower() == "true"[m
+ DATA_DIR = os.path.join(BASE_DIR, "data")[m
+ os.makedirs(DATA_DIR, exist_ok=True)[m
+ [m

@@ -1,8 +1,9 @@
 # server/routes_patient.py
 from flask import Blueprint, render_template, jsonify, abort
-
 import core.storage as storage
 import core.serial_reader as serial_reader
+import core.firebase_client as firebase_client
+from config.settings import IS_CLOUD
 
 patient_bp = Blueprint("patient", __name__)
 
@@ -26,7 +27,9 @@ def patient_live(patient_id):
     if not patient:
         return jsonify({"error": "not found"}), 404
     band = _band_for_patient(patient)
-    if band and band.get("active"):
+    if IS_CLOUD:
+        snap = firebase_client.get_latest_reading(patient_id)
+    elif band and band.get("active"):
         snap = serial_reader.get_latest()
     else:
         snap = {"accel_x": None, "temp": None, "bpm": None, "worn": None, "connected": False, "age_seconds": None}

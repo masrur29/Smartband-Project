@@ -67,3 +67,44 @@ def push_reading(patient_id, reading):
            .set({"last_reading": doc}, merge=True)
     except Exception as e:
         print(f"[FIREBASE] push_reading failed: {e}")
+        
+def get_latest_reading(patient_id):
+    """Read the most recent mirrored reading for a patient from Firestore.
+    Used on cloud deployments (IS_CLOUD=true) in place of serial_reader,
+    since there is no UART hardware there. Returns the same shape as
+    serial_reader.get_latest(), or an all-None/disconnected snapshot if
+    nothing is found."""
+    _init()
+    empty = {"accel_x": None, "temp": None, "bpm": None, "worn": None,
+             "connected": False, "age_seconds": None}
+    if _db is None:
+        return empty
+    try:
+        doc = _db.collection("patients").document(str(patient_id)).get()
+        if not doc.exists:
+            return empty
+        data = doc.to_dict()
+        last = data.get("last_reading")
+        if not last:
+            return empty
+        ts = last.get("timestamp")
+        connected = False
+        age_seconds = None
+        if ts is not None:
+            from datetime import datetime, timezone
+            now = datetime.now(timezone.utc)
+            ts_dt = ts if hasattr(ts, "tzinfo") else None
+            if ts_dt is not None:
+                age_seconds = (now - ts_dt).total_seconds()
+                connected = age_seconds <= 15
+        return {
+            "accel_x": last.get("accel_x"),
+            "temp": last.get("temp"),
+            "bpm": last.get("bpm"),
+            "worn": last.get("worn"),
+            "connected": connected,
+            "age_seconds": age_seconds,
+        }
+    except Exception as e:
+        print(f"[FIREBASE] get_latest_reading failed: {e}")
+        return empty
