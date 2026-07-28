@@ -108,3 +108,43 @@ def get_latest_reading(patient_id):
     except Exception as e:
         print(f"[FIREBASE] get_latest_reading failed: {e}")
         return empty
+
+def get_db():
+    """Expose the initialized Firestore client for generic collection
+    access (hospitals, bands, patients) used by storage.py on cloud
+    deployments."""
+    _init()
+    return _db
+
+
+def fs_load_collection(collection_name):
+    """Return every document in a collection as a list of plain dicts."""
+    db = get_db()
+    if db is None:
+        return []
+    try:
+        docs = db.collection(collection_name).stream()
+        return [d.to_dict() for d in docs]
+    except Exception as e:
+        print(f"[FIREBASE] fs_load_collection({collection_name}) failed: {e}")
+        return []
+
+
+def fs_save_doc(collection_name, doc_id, data):
+    db = get_db()
+    if db is None:
+        return
+    try:
+        db.collection(collection_name).document(str(doc_id)).set(data)
+    except Exception as e:
+        print(f"[FIREBASE] fs_save_doc({collection_name}/{doc_id}) failed: {e}")
+
+
+def fs_delete_doc(collection_name, doc_id):
+    db = get_db()
+    if db is None:
+        return
+    try:
+        db.collection(collection_name).document(str(doc_id)).delete()
+    except Exception as e:
+        print(f"[FIREBASE] fs_delete_doc({collection_name}/{doc_id}) failed: {e}")
