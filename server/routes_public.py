@@ -2,7 +2,7 @@
 # Smartband V001 — public self-service registration + FHIR view
 # HSHL Project — Masrur
 #
-# Two pieces carried over from the earlier feature-rich prototype, rebuilt
+# Pieces carried over from the earlier feature-rich prototype, rebuilt
 # to only ever show real sensor data:
 #
 #  /register            — a patient can register themselves without going
@@ -24,6 +24,13 @@
 #                          not on Rev1's sensor list — this view never shows
 #                          numbers for those; earlier prototypes simulated
 #                          them, this one deliberately does not).
+#
+#  /bridge               — Bluefy BLE-to-Firestore bridge page. Standalone
+#                          static page (Web Bluetooth + Firebase JS SDK)
+#                          served via Flask so it deploys with everything
+#                          else on Render, connects directly to Rev1 over
+#                          BLE (bypassing the Pi/UART path entirely), and
+#                          writes readings straight to Firestore.
 
 from flask import Blueprint, render_template, request, jsonify
 
@@ -171,3 +178,9 @@ def _obs(loinc_code, display_name, value, unit, ucum):
             "effectiveDateTime": __import__("datetime").datetime.now().isoformat(timespec="seconds"),
         }
     }
+
+
+# ── Bluefy BLE-to-Firestore bridge ────────────────────────────────
+@public_bp.route("/bridge")
+def bridge_page():
+    return render_template("bridge.html")

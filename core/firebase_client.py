@@ -6,8 +6,13 @@
 # JSON history in storage.py. Does not replace local storage — this is
 # an additional write path so the cloud dashboard / Bluefy bridge share
 # the same database as the Pi's local dashboard.
+#
+# Credentials: on the Pi, reads from a local JSON file. On Render (or
+# any environment without that file), reads from the FIREBASE_CREDENTIALS
+# environment variable instead, containing the full JSON contents.
 
 import os
+import json
 from datetime import datetime, timezone
 
 try:
@@ -19,7 +24,8 @@ except Exception as e:
     FIREBASE_AVAILABLE = False
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CRED_PATH = os.path.join(BASE_DIR, "health-monitor-hshl-firebase-adminsdk-fbsvc-efd6416ef8.json")
+CRED_FILENAME = "health-monitor-hshl-firebase-adminsdk-fbsvc-a4e8678455.json"
+CRED_PATH = os.path.join(BASE_DIR, CRED_FILENAME)
 
 _db = None
 
@@ -28,7 +34,19 @@ def _init():
     if _db is not None or not FIREBASE_AVAILABLE:
         return
     try:
-        cred = credentials.Certificate(CRED_PATH)
+        cred = None
+        env_json = os.environ.get("FIREBASE_CREDENTIALS")
+        if env_json:
+            cred_dict = json.loads(env_json)
+            cred = credentials.Certificate(cred_dict)
+            print("[FIREBASE] Using credentials from FIREBASE_CREDENTIALS env var")
+        elif os.path.exists(CRED_PATH):
+            cred = credentials.Certificate(CRED_PATH)
+            print(f"[FIREBASE] Using credentials from local file: {CRED_PATH}")
+        else:
+            print("[FIREBASE] No credentials found (neither env var nor local file)")
+            return
+
         firebase_admin.initialize_app(cred)
         _db = firestore.client()
         print("[FIREBASE] Initialized Firestore client")
@@ -37,9 +55,6 @@ def _init():
         _db = None
 
 def push_reading(patient_id, reading):
-    """Write one reading to Firestore under patients/{patient_id}/readings.
-    Silently no-ops if Firebase isn't available/initialized, so the local
-    dashboard keeps working even if this fails."""
     _init()
     if _db is None:
         return
