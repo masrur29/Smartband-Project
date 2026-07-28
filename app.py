@@ -37,6 +37,8 @@ def create_app():
 app = create_app()
 
 if __name__ == "__main__":
-    serial_reader.start()
-    loop.start()
+    from config.settings import IS_CLOUD
+    if not IS_CLOUD:
+        serial_reader.start()
+        loop.start()
     app.run(host=HOST, port=PORT, debug=DEBUG, use_reloader=False)

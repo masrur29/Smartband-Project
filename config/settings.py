@@ -5,6 +5,9 @@
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Set to "true" on Render (via environment variable) to skip hardware-
+# specific init (GPIO, UART) that only exists on the physical Pi.
+IS_CLOUD = os.environ.get("IS_CLOUD", "false").lower() == "true"
 DATA_DIR = os.path.join(BASE_DIR, "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
