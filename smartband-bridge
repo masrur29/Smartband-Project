@@ -23,106 +23,32 @@
     padding: 20px;
     min-height: 100vh;
   }
-  h1 {
-    font-size: 20px;
-    margin: 0 0 4px 0;
-  }
-  p.subtitle {
-    color: var(--muted);
-    margin: 0 0 20px 0;
-    font-size: 14px;
-  }
-  .card {
-    background: var(--card);
-    border-radius: 12px;
-    padding: 16px;
-    margin-bottom: 14px;
-  }
-  label {
-    display: block;
-    font-size: 13px;
-    color: var(--muted);
-    margin-bottom: 6px;
-  }
+  h1 { font-size: 20px; margin: 0 0 4px 0; }
+  p.subtitle { color: var(--muted); margin: 0 0 20px 0; font-size: 14px; }
+  .card { background: var(--card); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+  label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
   input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #334155;
-    background: #0f172a;
-    color: var(--text);
-    font-size: 15px;
+    width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #334155;
+    background: #0f172a; color: var(--text); font-size: 15px;
   }
   button {
-    width: 100%;
-    padding: 14px;
-    border-radius: 10px;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 10px;
-    cursor: pointer;
+    width: 100%; padding: 14px; border-radius: 10px; border: none;
+    font-size: 16px; font-weight: 600; margin-top: 10px; cursor: pointer;
   }
-  #connectBtn {
-    background: var(--accent);
-    color: #0f172a;
-  }
-  #connectBtn:disabled {
-    background: #334155;
-    color: var(--muted);
-  }
-  #disconnectBtn {
-    background: transparent;
-    color: var(--bad);
-    border: 1px solid var(--bad);
-    display: none;
-  }
-  .status {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    margin-bottom: 4px;
-  }
-  .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--bad);
-  }
+  #connectBtn { background: var(--accent); color: #0f172a; }
+  #connectBtn:disabled { background: #334155; color: var(--muted); }
+  #disconnectBtn { background: transparent; color: var(--bad); border: 1px solid var(--bad); display: none; }
+  .status { display: flex; align-items: center; gap: 8px; font-size: 14px; margin-bottom: 4px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--bad); }
   .dot.on { background: var(--good); }
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 14px;
-  }
-  .stat {
-    background: #0f172a;
-    border-radius: 10px;
-    padding: 12px;
-    text-align: center;
-  }
-  .stat .val {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--accent);
-  }
-  .stat .lbl {
-    font-size: 12px;
-    color: var(--muted);
-    margin-top: 4px;
-  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+  .stat { background: #0f172a; border-radius: 10px; padding: 12px; text-align: center; }
+  .stat .val { font-size: 24px; font-weight: 700; color: var(--accent); }
+  .stat .lbl { font-size: 12px; color: var(--muted); margin-top: 4px; }
   #log {
-    font-family: monospace;
-    font-size: 12px;
-    color: var(--muted);
-    background: #0f172a;
-    border-radius: 8px;
-    padding: 10px;
-    height: 140px;
-    overflow-y: auto;
-    white-space: pre-wrap;
+    font-family: monospace; font-size: 12px; color: var(--muted);
+    background: #0f172a; border-radius: 8px; padding: 10px; height: 140px;
+    overflow-y: auto; white-space: pre-wrap;
   }
 </style>
 </head>
@@ -154,6 +80,7 @@
     <div class="stat"><div class="val" id="valAccel">--</div><div class="lbl">Accel X (mg)</div></div>
     <div class="stat"><div class="val" id="valBpm">--</div><div class="lbl">Heart Rate (BPM)</div></div>
     <div class="stat"><div class="val" id="valWorn">--</div><div class="lbl">Worn</div></div>
+    <div class="stat"><div class="val" id="valSpo2">--</div><div class="lbl">SpO2 % (uncalibrated)</div></div>
   </div>
 </div>
 
@@ -168,7 +95,6 @@
     getFirestore, doc, setDoc, collection, addDoc, serverTimestamp
   } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-  // ── Firebase config (health-monitor-hshl, web SDK — safe to embed client-side) ──
   const firebaseConfig = {
     apiKey: "AIzaSyDNS4fJ_3v-tyDauYirDf3k8oqu4UdfviM",
     authDomain: "health-monitor-hshl.firebaseapp.com",
@@ -186,18 +112,18 @@
   fbDot.classList.add("on");
   fbStatus.textContent = "Firestore ready";
 
-  // ── BLE GATT UUIDs (Simple GATT Profile, Rev1 simple_peripheral) ──
   const SERVICE_UUID = 0xfff0;
-  const CHAR1_TEMP_UUID = 0xfff1;   // 1 byte, whole-degree C
-  const CHAR2_ACCEL_UUID = 0xfff2;  // 2 bytes, int16 accel X, big-endian
-  const CHAR4_HR_WORN_UUID = 0xfff4; // 2 bytes: [bpm, worn], notify
-  const CHAR5_IR_UUID = 0xfff5;     // 5 bytes: 4-byte big-endian IR + 1 pad byte
+  const CHAR1_TEMP_UUID = 0xfff1;
+  const CHAR2_ACCEL_UUID = 0xfff2;
+  const CHAR4_HR_WORN_UUID = 0xfff4;
+  const CHAR5_IR_UUID = 0xfff5;
+  const CHAR6_SPO2_UUID = 0xfff6;
 
   let bleDevice = null;
   let bleServer = null;
   let pollTimer = null;
 
-  const latest = { accel_x: null, temp: null, bpm: null, worn: null };
+  const latest = { accel_x: null, temp: null, bpm: null, worn: null, spo2: null };
 
   const bleDot = document.getElementById("bleDot");
   const bleStatus = document.getElementById("bleStatus");
@@ -219,14 +145,11 @@
   }
 
   function updateDisplay() {
-    document.getElementById("valTemp").textContent =
-      latest.temp !== null ? latest.temp : "--";
-    document.getElementById("valAccel").textContent =
-      latest.accel_x !== null ? latest.accel_x : "--";
-    document.getElementById("valBpm").textContent =
-      latest.bpm !== null ? latest.bpm : "--";
-    document.getElementById("valWorn").textContent =
-      latest.worn === null ? "--" : (latest.worn ? "Yes" : "No");
+    document.getElementById("valTemp").textContent = latest.temp !== null ? latest.temp : "--";
+    document.getElementById("valAccel").textContent = latest.accel_x !== null ? latest.accel_x : "--";
+    document.getElementById("valBpm").textContent = latest.bpm !== null ? latest.bpm : "--";
+    document.getElementById("valWorn").textContent = latest.worn === null ? "--" : (latest.worn ? "Yes" : "No");
+    document.getElementById("valSpo2").textContent = latest.spo2 !== null ? latest.spo2 : "--";
   }
 
   async function pushReading() {
@@ -237,6 +160,7 @@
       temp: latest.temp,
       bpm: latest.bpm,
       worn: latest.worn,
+      spo2: latest.spo2,
       timestamp: serverTimestamp(),
       source: "bluefy_bridge"
     };
@@ -263,7 +187,6 @@
 
       const service = await bleServer.getPrimaryService(SERVICE_UUID);
 
-      // CHAR4: subscribe to notifications (HR + worn)
       const char4 = await service.getCharacteristic(CHAR4_HR_WORN_UUID);
       await char4.startNotifications();
       char4.addEventListener("characteristicvaluechanged", (event) => {
@@ -277,8 +200,6 @@
       setBleConnected(true);
       log("Connected. Notifications active on CHAR4.");
 
-      // Poll CHAR1 (temp), CHAR2 (accel), CHAR5 (IR) periodically —
-      // these don't support notify, so read on an interval.
       pollTimer = setInterval(async () => {
         try {
           const c1 = await service.getCharacteristic(CHAR1_TEMP_UUID);
@@ -287,7 +208,17 @@
 
           const c2 = await service.getCharacteristic(CHAR2_ACCEL_UUID);
           const v2 = await c2.readValue();
-          latest.accel_x = v2.getInt16(0, false);  // false = big-endian, matches firmware CHAR2 packing
+          latest.accel_x = v2.getInt16(0, false);
+
+          const c6 = await service.getCharacteristic(CHAR6_SPO2_UUID);
+          const v6 = await c6.readValue();
+          const spo2Raw = v6.getUint8(0);
+          // Firmware sends 0 to mean "no valid estimate this tick" (no
+          // finger, weak signal, or out of plausible range) -- keep the
+          // last known value instead of flashing to 0.
+          if (spo2Raw > 0) {
+            latest.spo2 = spo2Raw;
+          }
 
           updateDisplay();
           pushReading();
