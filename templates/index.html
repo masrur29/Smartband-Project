@@ -223,9 +223,9 @@
           updateDisplay();
           pushReading();
         } catch (e) {
-          log(`Poll read failed: ${e.message}`);
+          log(`Poll read failed: ${e && (e.message || e.toString()) || "unknown error"}`);
         }
-      }, 5000);
+      }, 4000);
 
     } catch (e) {
       log(`Connection failed: ${e.message}`);
