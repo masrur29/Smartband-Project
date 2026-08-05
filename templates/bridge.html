@@ -1,4 +1,3 @@
-cat > ~/smartband-bridge-hosting/public/index.html << 'BRIDGE_EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,6 +80,7 @@ cat > ~/smartband-bridge-hosting/public/index.html << 'BRIDGE_EOF'
     <div class="stat"><div class="val" id="valAccel">--</div><div class="lbl">Accel X (mg)</div></div>
     <div class="stat"><div class="val" id="valBpm">--</div><div class="lbl">Heart Rate (BPM)</div></div>
     <div class="stat"><div class="val" id="valWorn">--</div><div class="lbl">Worn</div></div>
+    <div class="stat"><div class="val" id="valSpo2">--</div><div class="lbl">SpO2 % (uncalibrated)</div></div>
   </div>
 </div>
 
@@ -114,15 +114,16 @@ cat > ~/smartband-bridge-hosting/public/index.html << 'BRIDGE_EOF'
 
   const SERVICE_UUID = 0xfff0;
   const CHAR1_TEMP_UUID = 0xfff1;
-  const CHAR2_ACCEL_UUID = 0xfff2;  
+  const CHAR2_ACCEL_UUID = 0xfff2;
   const CHAR4_HR_WORN_UUID = 0xfff4;
   const CHAR5_IR_UUID = 0xfff5;
+  const CHAR6_SPO2_UUID = 0xfff6;
 
   let bleDevice = null;
   let bleServer = null;
   let pollTimer = null;
 
-  const latest = { accel_x: null, temp: null, bpm: null, worn: null };
+  const latest = { accel_x: null, temp: null, bpm: null, worn: null, spo2: null };
 
   const bleDot = document.getElementById("bleDot");
   const bleStatus = document.getElementById("bleStatus");
@@ -148,6 +149,7 @@ cat > ~/smartband-bridge-hosting/public/index.html << 'BRIDGE_EOF'
     document.getElementById("valAccel").textContent = latest.accel_x !== null ? latest.accel_x : "--";
     document.getElementById("valBpm").textContent = latest.bpm !== null ? latest.bpm : "--";
     document.getElementById("valWorn").textContent = latest.worn === null ? "--" : (latest.worn ? "Yes" : "No");
+    document.getElementById("valSpo2").textContent = latest.spo2 !== null ? latest.spo2 : "--";
   }
 
   async function pushReading() {
@@ -158,6 +160,7 @@ cat > ~/smartband-bridge-hosting/public/index.html << 'BRIDGE_EOF'
       temp: latest.temp,
       bpm: latest.bpm,
       worn: latest.worn,
+      spo2: latest.spo2,
       timestamp: serverTimestamp(),
       source: "bluefy_bridge"
     };
@@ -205,7 +208,17 @@ cat > ~/smartband-bridge-hosting/public/index.html << 'BRIDGE_EOF'
 
           const c2 = await service.getCharacteristic(CHAR2_ACCEL_UUID);
           const v2 = await c2.readValue();
-          latest.accel_x = v2.getInt16(0, false); 
+          latest.accel_x = v2.getInt16(0, false);
+
+          const c6 = await service.getCharacteristic(CHAR6_SPO2_UUID);
+          const v6 = await c6.readValue();
+          const spo2Raw = v6.getUint8(0);
+          // Firmware sends 0 to mean "no valid estimate this tick" (no
+          // finger, weak signal, or out of plausible range) -- keep the
+          // last known value instead of flashing to 0.
+          if (spo2Raw > 0) {
+            latest.spo2 = spo2Raw;
+          }
 
           updateDisplay();
           pushReading();
@@ -246,4 +259,3 @@ cat > ~/smartband-bridge-hosting/public/index.html << 'BRIDGE_EOF'
 
 </body>
 </html>
-BRIDGE_EOF
