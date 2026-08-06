@@ -18,7 +18,7 @@ from datetime import datetime
 from config.settings import (
     HOSPITALS_FILE, BANDS_FILE, PATIENTS_FILE, HISTORY_DIR, ALERTS_FILE,
     HISTORY_MAX_POINTS, TEMP_HIGH_LIMIT, ACCEL_HIGH_LIMIT,
-    BPM_LOW_LIMIT, BPM_HIGH_LIMIT, IS_CLOUD,
+    BPM_LOW_LIMIT, BPM_HIGH_LIMIT, SPO2_LOW_LIMIT, IS_CLOUD,
 )
 import core.firebase_client as firebase_client
 
@@ -330,6 +330,7 @@ def append_history(patient_id, reading):
             "temp": reading.get("temp"),
             "bpm": reading.get("bpm"),
             "worn": reading.get("worn"),
+            "spo2": reading.get("spo2"),
         })
         if len(history) > HISTORY_MAX_POINTS:
             history = history[-HISTORY_MAX_POINTS:]
@@ -354,6 +355,7 @@ def get_history(patient_id):
                     "temp": data.get("temp"),
                     "bpm": data.get("bpm"),
                     "worn": data.get("worn"),
+                    "spo2": data.get("spo2"),
                 })
             return out
         except Exception as e:
@@ -388,6 +390,8 @@ def check_and_log_alert(patient_id, reading):
             triggered.append("BRADYCARDIA")
         elif reading["bpm"] > BPM_HIGH_LIMIT:
             triggered.append("TACHYCARDIA")
+    if reading.get("spo2") is not None and reading["spo2"] < SPO2_LOW_LIMIT:
+        triggered.append("LOW_SPO2")
 
     if triggered:
         alert = {

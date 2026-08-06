@@ -32,7 +32,8 @@ def _tick():
     if not active_band or not active_band.get("patient_id"):
         return
     patient_id = active_band["patient_id"]
-    reading = {"accel_x": snap["accel_x"], "temp": snap["temp"], "bpm": snap.get("bpm"), "worn": snap.get("worn")}
+    reading = {"accel_x": snap["accel_x"], "temp": snap["temp"], "bpm": snap.get("bpm"),
+               "worn": snap.get("worn"), "spo2": snap.get("spo2")}
     storage.append_history(patient_id, reading)
     firebase_client.push_reading(patient_id, reading)
     storage.check_and_log_alert(patient_id, reading)

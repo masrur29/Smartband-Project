@@ -13,13 +13,18 @@
 #
 #  /fhir/<hospital_id>   — FHIR R4-shaped observations built from whatever
 #                          the currently active band is actually reporting
-#                          over UART right now. Only two vitals are coded as
-#                          FHIR Observations: Heart rate (LOINC 8867-4) and
-#                          Body temperature (LOINC 8310-5), because those are
-#                          the only two things Rev1 measures that map to a
-#                          real vital-sign LOINC code. Acceleration and raw
+#                          over UART right now. Three vitals are coded as
+#                          FHIR Observations: Heart rate (LOINC 8867-4),
+#                          Body temperature (LOINC 8310-5), and Oxygen
+#                          saturation / SpO2 (LOINC 59408-5) — SpO2 is
+#                          computed on-device via an UNCALIBRATED,
+#                          research-grade ratio-of-ratios estimate (see
+#                          i2c.c get_i2c_value_max3010x_spo2_pct()), not a
+#                          clinically validated reading; it's included here
+#                          because it does have a real vital-sign LOINC
+#                          code, same as the other two. Acceleration and raw
 #                          PPG (IR) counts are shown as plain telemetry, not
-#                          coded as vitals, and NOT fabricated (SpO2, blood
+#                          coded as vitals, and NOT fabricated (blood
 #                          pressure, respiratory rate, stress/EDA, HRV are
 #                          not on Rev1's sensor list — this view never shows
 #                          numbers for those; earlier prototypes simulated
@@ -136,6 +141,8 @@ def api_fhir_bundle(hospital_id):
                     entries.append(_obs("8867-4", "Heart rate", snap["bpm"], "bpm", "/min"))
                 if snap.get("temp") is not None:
                     entries.append(_obs("8310-5", "Body temperature", round(snap["temp"], 1), "Cel", "Cel"))
+                if snap.get("spo2") is not None:
+                    entries.append(_obs("59408-5", "Oxygen saturation", snap["spo2"], "%", "%"))
         telemetry = None
         if band and band.get("active"):
             snap = serial_reader.get_latest()

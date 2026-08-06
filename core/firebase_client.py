@@ -76,7 +76,7 @@ def get_latest_reading(patient_id):
     nothing is found."""
     _init()
     empty = {"accel_x": None, "temp": None, "bpm": None, "worn": None,
-             "connected": False, "age_seconds": None}
+             "spo2": None, "connected": False, "age_seconds": None}
     if _db is None:
         return empty
     try:
@@ -102,6 +102,7 @@ def get_latest_reading(patient_id):
             "temp": last.get("temp"),
             "bpm": last.get("bpm"),
             "worn": last.get("worn"),
+            "spo2": last.get("spo2"),
             "connected": connected,
             "age_seconds": age_seconds,
         }

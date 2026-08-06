@@ -39,6 +39,11 @@ _ACCEL_RE = re.compile(r"Acceleration=(-?\d+)mg")
 _TEMP_RE = re.compile(r"Temperature=(-?\d+\.?\d*)C")
 _BPM_RE = re.compile(r"HEART_RATE=(-?\d+)\s*BPM")
 _WORN_RE = re.compile(r"WORN=(\d+)")
+# SPO2=<0-100>, 0 meaning "no valid reading this tick" (no finger, signal
+# too weak, or outside the plausible range) rather than a real 0% reading --
+# see i2c.c get_i2c_value_max3010x_spo2_pct() on the firmware side. This is
+# an UNCALIBRATED, research-grade estimate, not a clinical measurement.
+_SPO2_RE = re.compile(r"SPO2=(-?\d+)")
 
 _lock = threading.Lock()
 _latest = {
@@ -46,6 +51,7 @@ _latest = {
     "temp": None,
     "bpm": None,
     "worn": None,           # 1 = band is being worn / good PPG contact, 0 = not worn
+    "spo2": None,           # 0-100, uncalibrated/research-grade; None until a valid reading arrives
     "last_update": None,   # datetime of last complete-ish update
     "connected": False,
 }
@@ -105,13 +111,24 @@ def _apply_line(line):
             _latest["worn"] = bool(int(m.group(1)))
         updated = True
 
+    m = _SPO2_RE.search(line)
+    if m:
+        spo2_val = int(m.group(1))
+        with _lock:
+            # 0 from the firmware means "no valid estimate this tick", so
+            # keep the last known value on the dashboard instead of
+            # flashing to 0 every time contact briefly drops.
+            if spo2_val > 0:
+                _latest["spo2"] = spo2_val
+        updated = True
+
     if updated:
         with _lock:
             _latest["last_update"] = datetime.now()
             _latest["connected"] = True
             # Only push a history point once we have accel + temp at least
-            # once — bpm/worn are included when present but their absence
-            # doesn't block history, they just show "--" / unknown.
+            # once — bpm/worn/spo2 are included when present but their
+            # absence doesn't block history, they just show "--" / unknown.
             if _latest["accel_x"] is not None and _latest["temp"] is not None:
                 _history.append({
                     "t": datetime.now().strftime("%H:%M:%S"),
@@ -119,6 +136,7 @@ def _apply_line(line):
                     "temp": _latest["temp"],
                     "bpm": _latest["bpm"],
                     "worn": _latest["worn"],
+                    "spo2": _latest["spo2"],
                 })
     return updated
 

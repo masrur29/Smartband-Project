@@ -33,6 +33,9 @@ TEMP_HIGH_LIMIT = 38.5     # deg C — fever
 ACCEL_HIGH_LIMIT = 2000    # mg — sudden shock / fall-like spike
 BPM_LOW_LIMIT = 40         # bpm — bradycardia
 BPM_HIGH_LIMIT = 140       # bpm — tachycardia
+SPO2_LOW_LIMIT = 92        # % — hypoxia threshold. NOTE: SpO2 on this board is an
+                           # uncalibrated, research-grade estimate (see i2c.c), so
+                           # this alert is illustrative, not a clinical threshold.
 
 # ── OLED (SSD1306 via luma.oled, I2C on Rev1's shared bus) ────────
 OLED_I2C_ADDRESS = 0x3C
