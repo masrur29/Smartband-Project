@@ -30,7 +30,7 @@
       <div><span class="value" id="v-temp">--</span><span class="unit">°C</span></div>
     </div>
     <div class="card">
-      <h3>SpO₂ <span class="unit-note">(uncalibrated)</span></h3>
+      <h3>SpO₂</h3>
       <div><span class="value" id="v-spo2">--</span><span class="unit">%</span></div>
     </div>
     <div class="card">
@@ -39,16 +39,16 @@
     </div>
   </div>
 
-  <div class="section-title">Heart Rate History</div>
+  <div class="section-title">Heart Rate History <span class="unit-note">(bpm)</span></div>
   <canvas id="chart-bpm" height="70"></canvas>
 
-  <div class="section-title">Temperature History</div>
+  <div class="section-title">Temperature History <span class="unit-note">(°C)</span></div>
   <canvas id="chart-temp" height="70"></canvas>
 
-  <div class="section-title">Acceleration History</div>
+  <div class="section-title">Acceleration History <span class="unit-note">(mg)</span></div>
   <canvas id="chart-accel" height="70"></canvas>
 
-  <div class="section-title">SpO₂ History <span class="unit-note">(uncalibrated, research-grade)</span></div>
+  <div class="section-title">SpO₂ History <span class="unit-note">(%)</span></div>
   <canvas id="chart-spo2" height="70"></canvas>
 
   <div class="section-title">Alerts</div>
@@ -65,21 +65,23 @@ let chartBpm, chartTemp, chartAccel, chartSpo2;
 // History timestamps can arrive in two shapes depending on data path:
 //  - local/Pi mode: "2026-08-05T14:32:07" (naive isoformat, no timezone)
 //  - Firestore/cloud mode: full ISO with timezone
-// Both parse fine with `new Date(...)`; we just need HH:MM out of it.
-function toHHMM(tStr) {
+// Both parse fine with `new Date(...)`; we need MM:SS (not HH:MM) since
+// readings come in every few seconds -- HH:MM would bunch many points
+// under the same label and make the chart unreadable.
+function toMMSS(tStr) {
   const d = new Date(tStr);
   if (isNaN(d.getTime())) {
-    // Fallback: try to pull HH:MM directly out of the string if Date()
+    // Fallback: try to pull MM:SS directly out of the string if Date()
     // couldn't parse it for some reason, rather than showing "Invalid Date".
-    const m = tStr.match(/(\d{2}):(\d{2})/);
+    const m = tStr.match(/:(\d{2}):(\d{2})/);
     return m ? `${m[1]}:${m[2]}` : tStr;
   }
-  const hh = String(d.getHours()).padStart(2, '0');
   const mm = String(d.getMinutes()).padStart(2, '0');
-  return `${hh}:${mm}`;
+  const ss = String(d.getSeconds()).padStart(2, '0');
+  return `${mm}:${ss}`;
 }
 
-function makeChart(canvasId, label, color) {
+function makeChart(canvasId, label, color, unit) {
   const ctx = document.getElementById(canvasId).getContext('2d');
   return new Chart(ctx, {
     type: 'line',
@@ -91,7 +93,7 @@ function makeChart(canvasId, label, color) {
     },
     options: {
       scales: {
-        y: { ticks: { color: '#8fa3b0' } },
+        y: { ticks: { color: '#8fa3b0' }, title: { display: true, text: unit, color: '#8fa3b0' } },
         x: { ticks: { color: '#8fa3b0', maxTicksLimit: 8 } },
       },
       plugins: { legend: { display: false } },
@@ -127,17 +129,17 @@ async function pollLive() {
 async function pollHistory() {
   const res = await fetch(`/api/patient/${patientId}/history`);
   const hist = await res.json();
-  const labels = hist.map(h => toHHMM(h.t));
+  const labels = hist.map(h => toMMSS(h.t));
   const accel = hist.map(h => h.accel_x);
   const temp = hist.map(h => h.temp);
   const bpm = hist.map(h => h.bpm);
   const spo2 = hist.map(h => h.spo2);
 
   if (!chartBpm) {
-    chartBpm = makeChart('chart-bpm', 'BPM', '#5fd68a');
-    chartTemp = makeChart('chart-temp', 'Temp (°C)', '#e2543b');
-    chartAccel = makeChart('chart-accel', 'Accel X (mg)', '#4fc3f7');
-    chartSpo2 = makeChart('chart-spo2', 'SpO2 (%)', '#c084fc');
+    chartBpm = makeChart('chart-bpm', 'BPM', '#5fd68a', 'bpm');
+    chartTemp = makeChart('chart-temp', 'Temp (°C)', '#e2543b', '°C');
+    chartAccel = makeChart('chart-accel', 'Accel X (mg)', '#4fc3f7', 'mg');
+    chartSpo2 = makeChart('chart-spo2', 'SpO2 (%)', '#c084fc', '%');
   }
   updateChart(chartBpm, labels, bpm);
   updateChart(chartTemp, labels, temp);
