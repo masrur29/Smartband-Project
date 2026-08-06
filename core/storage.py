@@ -15,6 +15,12 @@ import string
 import threading
 from datetime import datetime
 
+try:
+    from firebase_admin import firestore as fb_firestore
+    FIRESTORE_QUERY_AVAILABLE = True
+except Exception:
+    FIRESTORE_QUERY_AVAILABLE = False
+
 from config.settings import (
     HOSPITALS_FILE, BANDS_FILE, PATIENTS_FILE, HISTORY_DIR, ALERTS_FILE,
     HISTORY_MAX_POINTS, TEMP_HIGH_LIMIT, ACCEL_HIGH_LIMIT,
@@ -343,8 +349,31 @@ def get_history(patient_id):
         if db is None:
             return []
         try:
-            docs = (db.collection("patients").document(patient_id)
-                      .collection("readings").order_by("timestamp").limit(HISTORY_MAX_POINTS).stream())
+            # IMPORTANT: order_by("timestamp") with no direction defaults to
+            # ASCENDING, so .limit(HISTORY_MAX_POINTS) on its own returns the
+            # OLDEST N documents, not the most recent N. Once a patient has
+            # accumulated more than HISTORY_MAX_POINTS readings (easy after
+            # repeated testing sessions), this silently freezes the chart on
+            # old data forever and any field added later (e.g. spo2) never
+            # appears, since none of those old documents have it. Fix: query
+            # DESCENDING (newest first) with the limit, then reverse back to
+            # chronological order for the chart.
+            if FIRESTORE_QUERY_AVAILABLE:
+                query = (db.collection("patients").document(patient_id)
+                            .collection("readings")
+                            .order_by("timestamp", direction=fb_firestore.Query.DESCENDING)
+                            .limit(HISTORY_MAX_POINTS))
+            else:
+                # Fallback (should not normally hit this -- firebase_admin
+                # ships firestore support whenever FIREBASE_AVAILABLE is
+                # True) -- old ascending/oldest-first behavior.
+                query = (db.collection("patients").document(patient_id)
+                            .collection("readings").order_by("timestamp").limit(HISTORY_MAX_POINTS))
+
+            docs = list(query.stream())
+            if FIRESTORE_QUERY_AVAILABLE:
+                docs.reverse()  # back to chronological (oldest -> newest) for the chart
+
             out = []
             for d in docs:
                 data = d.to_dict()
