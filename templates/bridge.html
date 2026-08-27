@@ -214,10 +214,16 @@
           const v6 = await c6.readValue();
           const spo2Raw = v6.getUint8(0);
           // Firmware sends 0 to mean "no valid estimate this tick" (no
-          // finger, weak signal, or out of plausible range) -- keep the
-          // last known value instead of flashing to 0.
+          // finger, weak signal, or out of plausible range). If the band
+          // is genuinely not worn right now, clear immediately to match
+          // the OLED's behavior -- don't keep showing a stale reading
+          // from before the finger was removed. Only fall back to
+          // "keep last known value" for a brief worn-but-momentarily-
+          // invalid tick (still worn=true, just spo2Raw==0 this cycle).
           if (spo2Raw > 0) {
             latest.spo2 = spo2Raw;
+          } else if (latest.worn === false) {
+            latest.spo2 = null;
           }
 
           updateDisplay();
